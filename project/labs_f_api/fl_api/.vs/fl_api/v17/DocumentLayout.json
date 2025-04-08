@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\controllers\\pdfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\pdfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\services\\labanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\services\\labanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\repositories\\labanalysisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\repositories\\labanalysisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\interfaces\\ilabanalysisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\interfaces\\ilabanalysisrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\interfaces\\ilabanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\interfaces\\ilabanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\controllers\\labscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\labscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\services\\gptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\services\\gptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\services\\statusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\services\\statusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\interfaces\\istatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\interfaces\\istatusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\configurations\\mongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\configurations\\mongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\interfaces\\igptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\interfaces\\igptservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\dtos\\materialsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\dtos\\materialsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\dtos\\materialitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\dtos\\materialitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\dtos\\labanalysisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\dtos\\labanalysisdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\labs\\fl_api\\fl_api\\configurations\\openaisettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\configurations\\openaisettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LabAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Services\\LabAnalysisService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Services\\LabAnalysisService.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Services\\LabAnalysisService.cs",
+              "RelativeToolTip": "fl_api\\Services\\LabAnalysisService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T23:20:11.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LabsController.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Controllers\\LabsController.cs",
+              "RelativeDocumentMoniker": "fl_api\\Controllers\\LabsController.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Controllers\\LabsController.cs",
+              "RelativeToolTip": "fl_api\\Controllers\\LabsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T23:06:43.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ILabAnalysisRepository.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Interfaces\\ILabAnalysisRepository.cs",
+              "RelativeDocumentMoniker": "fl_api\\Interfaces\\ILabAnalysisRepository.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Interfaces\\ILabAnalysisRepository.cs",
+              "RelativeToolTip": "fl_api\\Interfaces\\ILabAnalysisRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T23:05:35.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MaterialItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\DTOs\\MaterialItemDto.cs",
+              "RelativeDocumentMoniker": "fl_api\\DTOs\\MaterialItemDto.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\DTOs\\MaterialItemDto.cs",
+              "RelativeToolTip": "fl_api\\DTOs\\MaterialItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T22:21:11.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MaterialsDto.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\DTOs\\MaterialsDto.cs",
+              "RelativeDocumentMoniker": "fl_api\\DTOs\\MaterialsDto.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\DTOs\\MaterialsDto.cs",
+              "RelativeToolTip": "fl_api\\DTOs\\MaterialsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T22:20:58.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LabAnalysisDto.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\DTOs\\LabAnalysisDto.cs",
+              "RelativeDocumentMoniker": "fl_api\\DTOs\\LabAnalysisDto.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\DTOs\\LabAnalysisDto.cs",
+              "RelativeToolTip": "fl_api\\DTOs\\LabAnalysisDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T22:19:57.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PdfController.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Controllers\\PdfController.cs",
+              "RelativeDocumentMoniker": "fl_api\\Controllers\\PdfController.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Controllers\\PdfController.cs",
+              "RelativeToolTip": "fl_api\\Controllers\\PdfController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwA4AAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T19:03:00.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LabAnalysisRepository.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Repositories\\LabAnalysisRepository.cs",
+              "RelativeDocumentMoniker": "fl_api\\Repositories\\LabAnalysisRepository.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Repositories\\LabAnalysisRepository.cs",
+              "RelativeToolTip": "fl_api\\Repositories\\LabAnalysisRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T23:05:59.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Program.cs",
+              "RelativeDocumentMoniker": "fl_api\\Program.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Program.cs",
+              "RelativeToolTip": "fl_api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T18:53:49.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\appsettings.json",
+              "RelativeDocumentMoniker": "fl_api\\appsettings.json",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\appsettings.json",
+              "RelativeToolTip": "fl_api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-05T18:52:21.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ILabAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Interfaces\\ILabAnalysisService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Interfaces\\ILabAnalysisService.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Interfaces\\ILabAnalysisService.cs",
+              "RelativeToolTip": "fl_api\\Interfaces\\ILabAnalysisService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T23:20:37.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MongoDbSettings.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Configurations\\MongoDbSettings.cs",
+              "RelativeDocumentMoniker": "fl_api\\Configurations\\MongoDbSettings.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Configurations\\MongoDbSettings.cs",
+              "RelativeToolTip": "fl_api\\Configurations\\MongoDbSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T22:30:18.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IStatusService.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Interfaces\\IStatusService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Interfaces\\IStatusService.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Interfaces\\IStatusService.cs",
+              "RelativeToolTip": "fl_api\\Interfaces\\IStatusService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T22:34:46.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StatusController.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Controllers\\StatusController.cs",
+              "RelativeDocumentMoniker": "fl_api\\Controllers\\StatusController.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Controllers\\StatusController.cs",
+              "RelativeToolTip": "fl_api\\Controllers\\StatusController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T22:35:49.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GptService.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Services\\GptService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Services\\GptService.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Services\\GptService.cs",
+              "RelativeToolTip": "fl_api\\Services\\GptService.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowEcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T18:57:50.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IGptService.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Interfaces\\IGptService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Interfaces\\IGptService.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Interfaces\\IGptService.cs",
+              "RelativeToolTip": "fl_api\\Interfaces\\IGptService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T18:57:14.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StatusService.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Services\\StatusService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Services\\StatusService.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Services\\StatusService.cs",
+              "RelativeToolTip": "fl_api\\Services\\StatusService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvzYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T22:35:05.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OpenAISettings.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Configurations\\OpenAISettings.cs",
+              "RelativeDocumentMoniker": "fl_api\\Configurations\\OpenAISettings.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\labs\\fl_api\\fl_api\\Configurations\\OpenAISettings.cs",
+              "RelativeToolTip": "fl_api\\Configurations\\OpenAISettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T18:53:33.681Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
