@@ -15,6 +15,7 @@ builder.Services.Configure<OpenAISettings>(
 builder.Services.AddSingleton(sp =>
     sp.GetRequiredService<IOptions<OpenAISettings>>().Value);
 builder.Services.AddScoped<ILabAnalysisService, LabAnalysisService>();
+builder.Services.AddHttpClient<IUflIdService, UflIdService>();
 
 builder.Services.AddHttpClient<IGptService, GptService>(client =>
 {
