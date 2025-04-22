@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ufl_class_lib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da533245e131fbe8037cd6d4d4fd99fb80038b42")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba9765749c7a4d4207a6aa4fb43f1dc1ac4622e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ufl_class_lib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ufl_class_lib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,12 +11,12 @@ public class UflIdService : IUflIdService
     public UflIdService(HttpClient httpClient)
     {
         _httpClient = httpClient;
-        _httpClient.BaseAddress = new Uri("https://api.underflabs.com/");
+        _httpClient.BaseAddress = new Uri("https://api.students.underflabs.com/");
     }
 
     public async Task<JsonArray> GetPeopleAsync()
     {
-        var response = await _httpClient.GetAsync("api/people");
+        var response = await _httpClient.GetAsync("api/sim");
         var content = await response.Content.ReadAsStringAsync();
 
         if (!response.IsSuccessStatusCode)

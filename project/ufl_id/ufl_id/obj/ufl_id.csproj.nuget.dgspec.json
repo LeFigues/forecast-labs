@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\ufl_id.csproj": {}
+    "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\ufl_id\\ufl_id\\ufl_id.csproj": {}
   },
   "projects": {
-    "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\ufl_id.csproj": {
+    "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\ufl_id\\ufl_id\\ufl_id.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\ufl_id.csproj",
+        "projectUniqueName": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\ufl_id\\ufl_id\\ufl_id.csproj",
         "projectName": "ufl_id",
-        "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\ufl_id.csproj",
+        "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\ufl_id\\ufl_id\\ufl_id.csproj",
         "packagesPath": "C:\\Users\\figue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\obj\\",
+        "outputPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\ufl_id\\ufl_id\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

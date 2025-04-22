@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fl_api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61d5c74e42df8962a20c88efa49bca1ee7dac83d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba9765749c7a4d4207a6aa4fb43f1dc1ac4622e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("fl_api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fl_api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

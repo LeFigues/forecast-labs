@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\ufls\\ufl_id\\project\\ufl_id\\ufl_id\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|solutionrelative:ufl_id\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\ufls\\ufl_id\\project\\ufl_id\\ufl_id\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|solutionrelative:ufl_id\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,14 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\ufls\\ufl_id\\project\\ufl_id\\ufl_id\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|solutionrelative:ufl_id\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Migrations\\20250410002429_toEC2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ufl_id\\Migrations\\20250410002429_toEC2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\ufls\\ufl_id\\project\\ufl_id\\ufl_id\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|solutionrelative:ufl_id\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\ufls\\ufl_id\\project\\ufl_id\\ufl_id\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,6 +105,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\ufls\\ufl_id\\project\\ufl_id\\ufl_id\\migrations\\20250324032818_tonewser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|solutionrelative:ufl_id\\migrations\\20250324032818_tonewser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\ufls\\ufl_id\\project\\ufl_id\\ufl_id\\migrations\\20250410002429_toec2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E5E2409-C2D1-4180-B5A8-64658434442B}|ufl_id\\ufl_id.csproj|solutionrelative:ufl_id\\migrations\\20250410002429_toec2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,37 +118,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250410002429_toEC2.cs",
-              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Migrations\\20250410002429_toEC2.cs",
-              "RelativeDocumentMoniker": "ufl_id\\Migrations\\20250410002429_toEC2.cs",
-              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Migrations\\20250410002429_toEC2.cs",
-              "RelativeToolTip": "ufl_id\\Migrations\\20250410002429_toEC2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T00:24:29.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "PeopleController.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Controllers\\PeopleController.cs",
               "RelativeDocumentMoniker": "ufl_id\\Controllers\\PeopleController.cs",
               "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Controllers\\PeopleController.cs",
               "RelativeToolTip": "ufl_id\\Controllers\\PeopleController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T23:20:09.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "20250324032818_tonewser.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Migrations\\20250324032818_tonewser.cs",
               "RelativeDocumentMoniker": "ufl_id\\Migrations\\20250324032818_tonewser.cs",
@@ -160,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Models\\User.cs",
               "RelativeDocumentMoniker": "ufl_id\\Models\\User.cs",
@@ -172,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\appsettings.json",
               "RelativeDocumentMoniker": "ufl_id\\appsettings.json",
@@ -180,12 +167,11 @@
               "RelativeToolTip": "ufl_id\\appsettings.json",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-15T00:32:44.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T00:32:44.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "AuthorizationCode.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Models\\AuthorizationCode.cs",
               "RelativeDocumentMoniker": "ufl_id\\Models\\AuthorizationCode.cs",
@@ -197,7 +183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "ufl_id\\Controllers\\AuthController.cs",
@@ -205,12 +191,11 @@
               "RelativeToolTip": "ufl_id\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAwwHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T22:03:07.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T22:03:07.054Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "ApiClient.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Models\\ApiClient.cs",
               "RelativeDocumentMoniker": "ufl_id\\Models\\ApiClient.cs",
@@ -222,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Models\\Role.cs",
               "RelativeDocumentMoniker": "ufl_id\\Models\\Role.cs",
@@ -235,7 +220,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 26,
+              "Title": "20250410002429_toEC2.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Migrations\\20250410002429_toEC2.cs",
+              "RelativeDocumentMoniker": "ufl_id\\Migrations\\20250410002429_toEC2.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Migrations\\20250410002429_toEC2.cs",
+              "RelativeToolTip": "ufl_id\\Migrations\\20250410002429_toEC2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T00:24:29.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Models\\UserRole.cs",
               "RelativeDocumentMoniker": "ufl_id\\Models\\UserRole.cs",
@@ -247,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "ApiScope.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Models\\ApiScope.cs",
               "RelativeDocumentMoniker": "ufl_id\\Models\\ApiScope.cs",
@@ -259,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Program.cs",
               "RelativeDocumentMoniker": "ufl_id\\Program.cs",
@@ -267,12 +264,11 @@
               "RelativeToolTip": "ufl_id\\Program.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T00:33:06.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T00:33:06.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "ufl_id\\Controllers\\UsersController.cs",
@@ -284,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "ApiToken.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Models\\ApiToken.cs",
               "RelativeDocumentMoniker": "ufl_id\\Models\\ApiToken.cs",
@@ -296,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Models\\Person.cs",
               "RelativeDocumentMoniker": "ufl_id\\Models\\Person.cs",
@@ -304,12 +300,11 @@
               "RelativeToolTip": "ufl_id\\Models\\Person.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T00:28:51.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T00:28:51.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "RefreshToken.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Models\\RefreshToken.cs",
               "RelativeDocumentMoniker": "ufl_id\\Models\\RefreshToken.cs",
@@ -321,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "UserActivity.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Models\\UserActivity.cs",
               "RelativeDocumentMoniker": "ufl_id\\Models\\UserActivity.cs",
@@ -333,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Exceptions\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "ufl_id\\Exceptions\\ExceptionMiddleware.cs",
@@ -345,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "ApiClientsController.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Controllers\\ApiClientsController.cs",
               "RelativeDocumentMoniker": "ufl_id\\Controllers\\ApiClientsController.cs",
@@ -357,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "20241015012155_tovps.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Migrations\\20241015012155_tovps.cs",
               "RelativeDocumentMoniker": "ufl_id\\Migrations\\20241015012155_tovps.cs",
@@ -369,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "TokenValidationService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Services\\TokenValidationService.cs",
               "RelativeDocumentMoniker": "ufl_id\\Services\\TokenValidationService.cs",
@@ -381,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "RoleService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Services\\RoleService.cs",
               "RelativeDocumentMoniker": "ufl_id\\Services\\RoleService.cs",
@@ -393,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "ClientService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Services\\ClientService.cs",
               "RelativeDocumentMoniker": "ufl_id\\Services\\ClientService.cs",
@@ -405,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "ufl_id\\Services\\AuthService.cs",
@@ -417,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "AuthorizationService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Services\\AuthorizationService.cs",
               "RelativeDocumentMoniker": "ufl_id\\Services\\AuthorizationService.cs",
@@ -429,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ufl_id\\Properties\\launchSettings.json",
@@ -441,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "TokenService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\UFLs\\ufl_id\\project\\ufl_id\\ufl_id\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "ufl_id\\Services\\TokenService.cs",

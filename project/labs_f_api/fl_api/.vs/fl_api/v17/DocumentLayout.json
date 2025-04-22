@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\controllers\\uflpeoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\uflpeoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\dtos\\getliststudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\dtos\\getliststudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\services\\uflidservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\services\\uflidservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\interfaces\\iuflidservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\interfaces\\iuflidservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\controllers\\uflpeoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\uflpeoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF35C220-A39B-4546-AD5D-9FFDC5147B15}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\controllers\\pdfcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,17 +106,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GetListStudents.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\DTOs\\GetListStudents.cs",
+              "RelativeDocumentMoniker": "fl_api\\DTOs\\GetListStudents.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\DTOs\\GetListStudents.cs",
+              "RelativeToolTip": "fl_api\\DTOs\\GetListStudents.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T00:56:36.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UflPeopleController.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Controllers\\UflPeopleController.cs",
               "RelativeDocumentMoniker": "fl_api\\Controllers\\UflPeopleController.cs",
-              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Controllers\\UflPeopleController.cs",
-              "RelativeToolTip": "fl_api\\Controllers\\UflPeopleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Controllers\\UflPeopleController.cs*",
+              "RelativeToolTip": "fl_api\\Controllers\\UflPeopleController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T05:58:51.06Z",
               "EditorCaption": ""
@@ -125,14 +146,14 @@
               "RelativeDocumentMoniker": "fl_api\\Services\\UflIdService.cs",
               "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Services\\UflIdService.cs",
               "RelativeToolTip": "fl_api\\Services\\UflIdService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T05:58:09.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "IUflIdService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Interfaces\\IUflIdService.cs",
               "RelativeDocumentMoniker": "fl_api\\Interfaces\\IUflIdService.cs",
@@ -145,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "MaterialsDto.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\DTOs\\MaterialsDto.cs",
               "RelativeDocumentMoniker": "fl_api\\DTOs\\MaterialsDto.cs",
@@ -157,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LabAnalysisDto.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\DTOs\\LabAnalysisDto.cs",
               "RelativeDocumentMoniker": "fl_api\\DTOs\\LabAnalysisDto.cs",
@@ -169,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Program.cs",
               "RelativeDocumentMoniker": "fl_api\\Program.cs",
@@ -177,12 +198,11 @@
               "RelativeToolTip": "fl_api\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T18:53:49.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T18:53:49.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "GptService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Services\\GptService.cs",
               "RelativeDocumentMoniker": "fl_api\\Services\\GptService.cs",
@@ -190,12 +210,11 @@
               "RelativeToolTip": "fl_api\\Services\\GptService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T18:57:50.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T18:57:50.85Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PdfController.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Controllers\\PdfController.cs",
               "RelativeDocumentMoniker": "fl_api\\Controllers\\PdfController.cs",
@@ -203,12 +222,11 @@
               "RelativeToolTip": "fl_api\\Controllers\\PdfController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T19:03:00.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T19:03:00.798Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "LabAnalysisService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Services\\LabAnalysisService.cs",
               "RelativeDocumentMoniker": "fl_api\\Services\\LabAnalysisService.cs",
@@ -220,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\appsettings.json",
               "RelativeDocumentMoniker": "fl_api\\appsettings.json",
@@ -232,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "LabAnalysisRepository.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Repositories\\LabAnalysisRepository.cs",
               "RelativeDocumentMoniker": "fl_api\\Repositories\\LabAnalysisRepository.cs",
@@ -244,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ReportController.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Controllers\\ReportController.cs",
               "RelativeDocumentMoniker": "fl_api\\Controllers\\ReportController.cs",
@@ -256,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ILabAnalysisRepository.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Interfaces\\ILabAnalysisRepository.cs",
               "RelativeDocumentMoniker": "fl_api\\Interfaces\\ILabAnalysisRepository.cs",
@@ -268,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IGptService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Interfaces\\IGptService.cs",
               "RelativeDocumentMoniker": "fl_api\\Interfaces\\IGptService.cs",
@@ -280,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "MaterialItemDto.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\DTOs\\MaterialItemDto.cs",
               "RelativeDocumentMoniker": "fl_api\\DTOs\\MaterialItemDto.cs",
@@ -292,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "SupplyReport.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Models\\SupplyReport.cs",
               "RelativeDocumentMoniker": "fl_api\\Models\\SupplyReport.cs",
@@ -304,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ILabAnalysisService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Interfaces\\ILabAnalysisService.cs",
               "RelativeDocumentMoniker": "fl_api\\Interfaces\\ILabAnalysisService.cs",
@@ -316,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "LabsController.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Controllers\\LabsController.cs",
               "RelativeDocumentMoniker": "fl_api\\Controllers\\LabsController.cs",
@@ -328,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "StatusController.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Controllers\\StatusController.cs",
               "RelativeDocumentMoniker": "fl_api\\Controllers\\StatusController.cs",
@@ -340,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "MongoDbSettings.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Configurations\\MongoDbSettings.cs",
               "RelativeDocumentMoniker": "fl_api\\Configurations\\MongoDbSettings.cs",
@@ -352,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "IStatusService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Interfaces\\IStatusService.cs",
               "RelativeDocumentMoniker": "fl_api\\Interfaces\\IStatusService.cs",
@@ -364,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "StatusService.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Services\\StatusService.cs",
               "RelativeDocumentMoniker": "fl_api\\Services\\StatusService.cs",
@@ -376,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "OpenAISettings.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\Configurations\\OpenAISettings.cs",
               "RelativeDocumentMoniker": "fl_api\\Configurations\\OpenAISettings.cs",
