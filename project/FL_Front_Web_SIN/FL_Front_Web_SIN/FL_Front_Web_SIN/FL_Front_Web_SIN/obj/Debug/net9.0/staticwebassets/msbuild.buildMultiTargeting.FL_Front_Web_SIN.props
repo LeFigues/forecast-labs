@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FL_Front_Web_SIN.props" />
+</Project>

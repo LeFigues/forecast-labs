@@ -1,0 +1,57 @@
+﻿@page "/forecast"
+@inject Services_ForecastService ForecastService
+@inject IJSRuntime JSRuntime
+
+<h1>Consumo de Materiales</h1>
+<p>Aquí se muestran los reportes de consumo de insumos.</p>
+
+<button class="btn btn-success mb-3" @onclick="ExportarAExcel">Exportar a Excel</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Producto</th>
+            <th>Usada</th>
+            <th>Dañada</th>
+            <th>Consumida</th>
+            <th>Requerida</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in consumoReal)
+        {
+            <tr>
+                <td>@item.Producto</td>
+                <td class="text-right">@item.Usada</td>
+                <td class="text-right">@item.Danada</td>
+                <td class="text-right">@item.Consumida</td>
+                <td class="text-right">@item.Requerida</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<SupplyReport> consumoReal = new List<SupplyReport>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        consumoReal = await ForecastService.GetSupplyReportAsync();
+    }
+
+    private async Task ExportarAExcel()
+    {
+        var csv = "Producto;Usada;Dañada;Consumida;Requerida\n";
+
+        foreach (var item in consumoReal)
+        {
+            csv += $"\"{item.Producto}\";{item.Usada};{item.Danada};{item.Consumida};{item.Requerida}\n";
+        }
+
+        var bytes = System.Text.Encoding.UTF8.GetBytes(csv);
+        var base64 = Convert.ToBase64String(bytes);
+
+        await JSRuntime.InvokeVoidAsync("downloadFile", "consumo_materiales.csv", base64);
+    }
+
+}
