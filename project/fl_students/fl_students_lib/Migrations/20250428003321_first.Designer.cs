@@ -12,7 +12,7 @@ using fl_students_lib.Data;
 namespace fl_students_lib.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250422020031_first")]
+    [Migration("20250428003321_first")]
     partial class first
     {
         /// <inheritdoc />
@@ -64,7 +64,7 @@ namespace fl_students_lib.Migrations
                     b.ToTable("Faculties");
                 });
 
-            modelBuilder.Entity("fl_students_lib.Models.Group", b =>
+            modelBuilder.Entity("fl_students_lib.Models.GroupStudent", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -72,42 +72,18 @@ namespace fl_students_lib.Migrations
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("SemesterId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SubjectId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TeacherId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("SemesterId");
-
-                    b.HasIndex("SubjectId");
-
-                    b.HasIndex("TeacherId");
-
-                    b.ToTable("Groups");
-                });
-
-            modelBuilder.Entity("fl_students_lib.Models.GroupStudent", b =>
-                {
                     b.Property<int>("GroupId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Score")
                         .HasColumnType("int");
 
                     b.Property<int>("StudentId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
+                    b.HasKey("Id");
 
-                    b.HasKey("GroupId", "StudentId");
+                    b.HasIndex("GroupId");
 
                     b.HasIndex("StudentId");
 
@@ -198,6 +174,38 @@ namespace fl_students_lib.Migrations
                     b.HasIndex("FacultyId");
 
                     b.ToTable("Rooms");
+                });
+
+            modelBuilder.Entity("fl_students_lib.Models.SGroup", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("SemesterId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SubjectId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SemesterId");
+
+                    b.HasIndex("SubjectId");
+
+                    b.HasIndex("TeacherId");
+
+                    b.ToTable("SGroups");
                 });
 
             modelBuilder.Entity("fl_students_lib.Models.Schedule", b =>
@@ -330,36 +338,9 @@ namespace fl_students_lib.Migrations
                     b.Navigation("Faculty");
                 });
 
-            modelBuilder.Entity("fl_students_lib.Models.Group", b =>
-                {
-                    b.HasOne("fl_students_lib.Models.Semester", "Semester")
-                        .WithMany("Groups")
-                        .HasForeignKey("SemesterId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("fl_students_lib.Models.Subject", "Subject")
-                        .WithMany("Groups")
-                        .HasForeignKey("SubjectId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("fl_students_lib.Models.Person", "Teacher")
-                        .WithMany()
-                        .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Semester");
-
-                    b.Navigation("Subject");
-
-                    b.Navigation("Teacher");
-                });
-
             modelBuilder.Entity("fl_students_lib.Models.GroupStudent", b =>
                 {
-                    b.HasOne("fl_students_lib.Models.Group", "Group")
+                    b.HasOne("fl_students_lib.Models.SGroup", "Group")
                         .WithMany("Students")
                         .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -396,9 +377,36 @@ namespace fl_students_lib.Migrations
                     b.Navigation("Faculty");
                 });
 
+            modelBuilder.Entity("fl_students_lib.Models.SGroup", b =>
+                {
+                    b.HasOne("fl_students_lib.Models.Semester", "Semester")
+                        .WithMany("Groups")
+                        .HasForeignKey("SemesterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("fl_students_lib.Models.Subject", "Subject")
+                        .WithMany("Groups")
+                        .HasForeignKey("SubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("fl_students_lib.Models.Person", "Teacher")
+                        .WithMany()
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Semester");
+
+                    b.Navigation("Subject");
+
+                    b.Navigation("Teacher");
+                });
+
             modelBuilder.Entity("fl_students_lib.Models.Schedule", b =>
                 {
-                    b.HasOne("fl_students_lib.Models.Group", "Group")
+                    b.HasOne("fl_students_lib.Models.SGroup", "Group")
                         .WithMany("Schedule")
                         .HasForeignKey("GroupId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -462,13 +470,6 @@ namespace fl_students_lib.Migrations
                     b.Navigation("Rooms");
                 });
 
-            modelBuilder.Entity("fl_students_lib.Models.Group", b =>
-                {
-                    b.Navigation("Schedule");
-
-                    b.Navigation("Students");
-                });
-
             modelBuilder.Entity("fl_students_lib.Models.Role", b =>
                 {
                     b.Navigation("Users");
@@ -477,6 +478,13 @@ namespace fl_students_lib.Migrations
             modelBuilder.Entity("fl_students_lib.Models.Room", b =>
                 {
                     b.Navigation("Schedules");
+                });
+
+            modelBuilder.Entity("fl_students_lib.Models.SGroup", b =>
+                {
+                    b.Navigation("Schedule");
+
+                    b.Navigation("Students");
                 });
 
             modelBuilder.Entity("fl_students_lib.Models.Semester", b =>

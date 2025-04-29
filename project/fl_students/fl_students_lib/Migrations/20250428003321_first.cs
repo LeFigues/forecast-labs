@@ -192,7 +192,7 @@ namespace fl_students_lib.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Groups",
+                name: "SGroups",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -205,21 +205,21 @@ namespace fl_students_lib.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Groups", x => x.Id);
+                    table.PrimaryKey("PK_SGroups", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Groups_People_TeacherId",
+                        name: "FK_SGroups_People_TeacherId",
                         column: x => x.TeacherId,
                         principalTable: "People",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Groups_Semesters_SemesterId",
+                        name: "FK_SGroups_Semesters_SemesterId",
                         column: x => x.SemesterId,
                         principalTable: "Semesters",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Groups_Subjects_SubjectId",
+                        name: "FK_SGroups_Subjects_SubjectId",
                         column: x => x.SubjectId,
                         principalTable: "Subjects",
                         principalColumn: "Id",
@@ -231,23 +231,25 @@ namespace fl_students_lib.Migrations
                 name: "GroupStudents",
                 columns: table => new
                 {
-                    StudentId = table.Column<int>(type: "int", nullable: false),
-                    GroupId = table.Column<int>(type: "int", nullable: false),
                     Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Score = table.Column<int>(type: "int", nullable: false),
+                    StudentId = table.Column<int>(type: "int", nullable: false),
+                    GroupId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_GroupStudents", x => new { x.GroupId, x.StudentId });
-                    table.ForeignKey(
-                        name: "FK_GroupStudents_Groups_GroupId",
-                        column: x => x.GroupId,
-                        principalTable: "Groups",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                    table.PrimaryKey("PK_GroupStudents", x => x.Id);
                     table.ForeignKey(
                         name: "FK_GroupStudents_People_StudentId",
                         column: x => x.StudentId,
                         principalTable: "People",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_GroupStudents_SGroups_GroupId",
+                        column: x => x.GroupId,
+                        principalTable: "SGroups",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 })
@@ -270,15 +272,15 @@ namespace fl_students_lib.Migrations
                 {
                     table.PrimaryKey("PK_Schedules", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Schedules_Groups_GroupId",
-                        column: x => x.GroupId,
-                        principalTable: "Groups",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
                         name: "FK_Schedules_Rooms_RoomId",
                         column: x => x.RoomId,
                         principalTable: "Rooms",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Schedules_SGroups_GroupId",
+                        column: x => x.GroupId,
+                        principalTable: "SGroups",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 })
@@ -290,19 +292,9 @@ namespace fl_students_lib.Migrations
                 column: "FacultyId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Groups_SemesterId",
-                table: "Groups",
-                column: "SemesterId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Groups_SubjectId",
-                table: "Groups",
-                column: "SubjectId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Groups_TeacherId",
-                table: "Groups",
-                column: "TeacherId");
+                name: "IX_GroupStudents_GroupId",
+                table: "GroupStudents",
+                column: "GroupId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_GroupStudents_StudentId",
@@ -335,6 +327,21 @@ namespace fl_students_lib.Migrations
                 column: "RoomId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_SGroups_SemesterId",
+                table: "SGroups",
+                column: "SemesterId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SGroups_SubjectId",
+                table: "SGroups",
+                column: "SubjectId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SGroups_TeacherId",
+                table: "SGroups",
+                column: "TeacherId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Subjects_CareerId",
                 table: "Subjects",
                 column: "CareerId");
@@ -355,10 +362,10 @@ namespace fl_students_lib.Migrations
                 name: "Schedules");
 
             migrationBuilder.DropTable(
-                name: "Groups");
+                name: "Rooms");
 
             migrationBuilder.DropTable(
-                name: "Rooms");
+                name: "SGroups");
 
             migrationBuilder.DropTable(
                 name: "People");

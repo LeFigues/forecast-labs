@@ -37,7 +37,7 @@ namespace fl_students_mvc.Controllers
             var groupStudent = await _context.GroupStudents
                 .Include(g => g.Group)
                 .Include(g => g.Student)
-                .FirstOrDefaultAsync(m => m.GroupId == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (groupStudent == null)
             {
                 return NotFound();
@@ -50,7 +50,7 @@ namespace fl_students_mvc.Controllers
         public IActionResult Create()
         {
             ViewData["GroupId"] = new SelectList(_context.SGroups, "Id", "Name");
-            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "FirstName");
+            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "Address");
             return View();
         }
 
@@ -59,7 +59,7 @@ namespace fl_students_mvc.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,StudentId,GroupId")] GroupStudent groupStudent)
+        public async Task<IActionResult> Create([Bind("Id,Score,StudentId,GroupId")] GroupStudent groupStudent)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +68,7 @@ namespace fl_students_mvc.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["GroupId"] = new SelectList(_context.SGroups, "Id", "Name", groupStudent.GroupId);
-            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "FirstName", groupStudent.StudentId);
+            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "Address", groupStudent.StudentId);
             return View(groupStudent);
         }
 
@@ -86,7 +86,7 @@ namespace fl_students_mvc.Controllers
                 return NotFound();
             }
             ViewData["GroupId"] = new SelectList(_context.SGroups, "Id", "Name", groupStudent.GroupId);
-            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "FirstName", groupStudent.StudentId);
+            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "Address", groupStudent.StudentId);
             return View(groupStudent);
         }
 
@@ -95,9 +95,9 @@ namespace fl_students_mvc.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,StudentId,GroupId")] GroupStudent groupStudent)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Score,StudentId,GroupId")] GroupStudent groupStudent)
         {
-            if (id != groupStudent.GroupId)
+            if (id != groupStudent.Id)
             {
                 return NotFound();
             }
@@ -111,7 +111,7 @@ namespace fl_students_mvc.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!GroupStudentExists(groupStudent.GroupId))
+                    if (!GroupStudentExists(groupStudent.Id))
                     {
                         return NotFound();
                     }
@@ -123,7 +123,7 @@ namespace fl_students_mvc.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["GroupId"] = new SelectList(_context.SGroups, "Id", "Name", groupStudent.GroupId);
-            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "FirstName", groupStudent.StudentId);
+            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "Address", groupStudent.StudentId);
             return View(groupStudent);
         }
 
@@ -138,7 +138,7 @@ namespace fl_students_mvc.Controllers
             var groupStudent = await _context.GroupStudents
                 .Include(g => g.Group)
                 .Include(g => g.Student)
-                .FirstOrDefaultAsync(m => m.GroupId == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (groupStudent == null)
             {
                 return NotFound();
@@ -164,7 +164,7 @@ namespace fl_students_mvc.Controllers
 
         private bool GroupStudentExists(int id)
         {
-            return _context.GroupStudents.Any(e => e.GroupId == id);
+            return _context.GroupStudents.Any(e => e.Id == id);
         }
     }
 }

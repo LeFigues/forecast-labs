@@ -63,16 +63,24 @@ namespace fl_students_lib.Migrations
 
             modelBuilder.Entity("fl_students_lib.Models.GroupStudent", b =>
                 {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
                     b.Property<int>("GroupId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Score")
                         .HasColumnType("int");
 
                     b.Property<int>("StudentId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
+                    b.HasKey("Id");
 
-                    b.HasKey("GroupId", "StudentId");
+                    b.HasIndex("GroupId");
 
                     b.HasIndex("StudentId");
 

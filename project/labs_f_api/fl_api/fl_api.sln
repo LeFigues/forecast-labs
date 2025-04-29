@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fl_api", "fl_api\fl_api.csproj", "{CF35C220-A39B-4546-AD5D-9FFDC5147B15}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ExtracPDF", "ExtracPDF\ExtracPDF.pyproj", "{5A4800DD-04A3-410F-9B2A-58B9588789A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,13 @@ Global
 		{CF35C220-A39B-4546-AD5D-9FFDC5147B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF35C220-A39B-4546-AD5D-9FFDC5147B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF35C220-A39B-4546-AD5D-9FFDC5147B15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A4800DD-04A3-410F-9B2A-58B9588789A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4800DD-04A3-410F-9B2A-58B9588789A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E16C564F-642D-4AD8-8B70-B487AB5FA533}
 	EndGlobalSection
 EndGlobal

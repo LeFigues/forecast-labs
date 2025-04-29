@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fl_students_mvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba9765749c7a4d4207a6aa4fb43f1dc1ac4622e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0816b3dd639d1947e19bd6c1244c06bba9e2d88c")]
 [assembly: System.Reflection.AssemblyProductAttribute("fl_students_mvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fl_students_mvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

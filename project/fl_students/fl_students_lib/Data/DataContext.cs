@@ -24,11 +24,6 @@ namespace fl_students_lib.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Configuración de relaciones y restricciones adicionales
-
-            // Relación muchos a muchos entre Group y Student a través de GroupStudent
-            modelBuilder.Entity<GroupStudent>()
-                .HasKey(gs => new { gs.GroupId, gs.StudentId });
-
             modelBuilder.Entity<GroupStudent>()
                 .HasOne(gs => gs.Group)
                 .WithMany(g => g.Students)

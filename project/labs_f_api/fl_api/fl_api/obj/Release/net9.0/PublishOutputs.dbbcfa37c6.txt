@@ -53,6 +53,9 @@ C:\Users\figue\OneDrive\Escritorio\uflid\forecast-labs\project\labs_f_api\fl_api
 C:\Users\figue\OneDrive\Escritorio\uflid\forecast-labs\project\labs_f_api\fl_api\fl_api\obj\Release\net9.0\PubTmp\Out\Polly.Extensions.Http.dll
 C:\Users\figue\OneDrive\Escritorio\uflid\forecast-labs\project\labs_f_api\fl_api\fl_api\obj\Release\net9.0\PubTmp\Out\SharpCompress.dll
 C:\Users\figue\OneDrive\Escritorio\uflid\forecast-labs\project\labs_f_api\fl_api\fl_api\obj\Release\net9.0\PubTmp\Out\Snappier.dll
+C:\Users\figue\OneDrive\Escritorio\uflid\forecast-labs\project\labs_f_api\fl_api\fl_api\obj\Release\net9.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\figue\OneDrive\Escritorio\uflid\forecast-labs\project\labs_f_api\fl_api\fl_api\obj\Release\net9.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\figue\OneDrive\Escritorio\uflid\forecast-labs\project\labs_f_api\fl_api\fl_api\obj\Release\net9.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\figue\OneDrive\Escritorio\uflid\forecast-labs\project\labs_f_api\fl_api\fl_api\obj\Release\net9.0\PubTmp\Out\System.ClientModel.dll
 C:\Users\figue\OneDrive\Escritorio\uflid\forecast-labs\project\labs_f_api\fl_api\fl_api\obj\Release\net9.0\PubTmp\Out\System.CodeDom.dll
 C:\Users\figue\OneDrive\Escritorio\uflid\forecast-labs\project\labs_f_api\fl_api\fl_api\obj\Release\net9.0\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll

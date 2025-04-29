@@ -981,6 +981,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "fl_students.Controllers.SGroupsController",
+    "Method": "GetSubjectsByCareer",
+    "RelativePath": "api/SGroups/by-subject/{subjectId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subjectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[fl_students_lib.Models.Subject, fl_students_lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "fl_students.Controllers.StudentsController",
     "Method": "GetStudents",
     "RelativePath": "api/Students",
@@ -1197,6 +1223,32 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_students.Controllers.SubjectsController",
+    "Method": "GetSubjectsByCareer",
+    "RelativePath": "api/Subjects/by-career/{careerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "careerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[fl_students_lib.Models.Subject, fl_students_lib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "fl_students.Controllers.UsersController",

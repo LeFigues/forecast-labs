@@ -15,13 +15,19 @@
     <PackageReference Include="MongoDB.Driver" Version="3.3.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="OpenAI" Version="2.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
     <PackageReference Include="System.Net.Http.Json" Version="9.0.4" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="ExternalServices\" />
     <Folder Include="Middlewares\" />
+    <Folder Include="PDFs\" />
     <Folder Include="Utils\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExtracPDF\ExtracPDF.pyproj" />
   </ItemGroup>
 
 </Project>

@@ -46,6 +46,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "fl_api.Controllers.PlanningController",
+    "Method": "GetAllPlannings",
+    "RelativePath": "api/Planning",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.PlanningController",
+    "Method": "CreatePlanning",
+    "RelativePath": "api/Planning",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "planning",
+        "Type": "fl_api.DTOs.PlanningDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "fl_api.Controllers.ReportController",
     "Method": "GetSimulatedSupplyReport",
     "RelativePath": "api/Report/supplies",
@@ -69,6 +95,16 @@
     "ContainingType": "fl_api.Controllers.StatusController",
     "Method": "GetSystemStatus",
     "RelativePath": "api/Status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.UflPeopleController",
+    "Method": "GetPeople",
+    "RelativePath": "api/UflPeople",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

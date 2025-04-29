@@ -47,7 +47,7 @@ namespace fl_students.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutGroupStudent(int id, GroupStudent groupStudent)
         {
-            if (id != groupStudent.GroupId)
+            if (id != groupStudent.Id)
             {
                 return BadRequest();
             }
@@ -79,23 +79,9 @@ namespace fl_students.Controllers
         public async Task<ActionResult<GroupStudent>> PostGroupStudent(GroupStudent groupStudent)
         {
             _context.GroupStudents.Add(groupStudent);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (GroupStudentExists(groupStudent.GroupId))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetGroupStudent", new { id = groupStudent.GroupId }, groupStudent);
+            return CreatedAtAction("GetGroupStudent", new { id = groupStudent.Id }, groupStudent);
         }
 
         // DELETE: api/GroupStudents/5
@@ -116,7 +102,7 @@ namespace fl_students.Controllers
 
         private bool GroupStudentExists(int id)
         {
-            return _context.GroupStudents.Any(e => e.GroupId == id);
+            return _context.GroupStudents.Any(e => e.Id == id);
         }
     }
 }

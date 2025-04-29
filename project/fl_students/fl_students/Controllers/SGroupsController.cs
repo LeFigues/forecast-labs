@@ -32,7 +32,7 @@ namespace fl_students.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<SGroup>> GetSGroup(int id)
         {
-            var sGroup = await _context.SGroups.Include(s => s.Students).Where(s => s.Id == id).FirstOrDefaultAsync();
+            var sGroup = await _context.SGroups.Include(s => s.Schedule).Include(s => s.Students).ThenInclude(s => s.Student).Where(s => s.Id == id).FirstOrDefaultAsync();
 
             if (sGroup == null)
             {
