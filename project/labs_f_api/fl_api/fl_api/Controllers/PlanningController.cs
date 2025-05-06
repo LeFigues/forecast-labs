@@ -16,7 +16,7 @@ namespace fl_api.Controllers
         {
             _repository = repository;
         }
-        [HttpGet]
+        [HttpGet("getall")]
         public async Task<IActionResult> GetAllPlannings()
         {
             try
@@ -29,7 +29,26 @@ namespace fl_api.Controllers
                 return StatusCode(500, $"Error fetching plannings: {ex.Message}");
             }
         }
-        [HttpPost]
+
+        [HttpGet("getbyid/{id}")]
+        public async Task<IActionResult> GetPlanningById(string id)
+        {
+            try
+            {
+                var planning = await _repository.GetByIdAsync(id);
+                if (planning == null)
+                    return NotFound(new { message = "Planning not found." });
+
+                return Ok(planning);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error fetching planning: {ex.Message}");
+            }
+        }
+
+
+        [HttpPost("insert")]
         public async Task<IActionResult> CreatePlanning([FromBody] PlanningDto planning)
         {
             try
@@ -39,8 +58,10 @@ namespace fl_api.Controllers
             }
             catch (Exception ex)
             {
+                Console.WriteLine("❌ Error insertando en MongoDB: " + ex.Message);
                 return StatusCode(500, $"Error creating planning: {ex.Message}");
             }
         }
+
     }
 }

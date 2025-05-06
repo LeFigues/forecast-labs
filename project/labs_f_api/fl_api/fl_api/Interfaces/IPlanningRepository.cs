@@ -6,5 +6,7 @@ namespace fl_api.Interfaces
     {
         Task<List<PlanningDto>> GetAllAsync();
         Task CreateAsync(PlanningDto planning);
+        Task<PlanningDto?> GetByIdAsync(string id);
+
     }
 }

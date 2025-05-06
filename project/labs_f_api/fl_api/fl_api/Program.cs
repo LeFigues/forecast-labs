@@ -27,6 +27,8 @@ builder.Services.Configure<OpenAISettings>(
     builder.Configuration.GetSection("OpenAI"));
 builder.Services.AddSingleton(sp =>
     sp.GetRequiredService<IOptions<OpenAISettings>>().Value);
+builder.Services.AddSingleton<ILabForecastRepository, LabForecastRepository>();
+builder.Services.AddSingleton<ISupplyReportService, SupplyReportService>();
 
 // Registrar servicios
 builder.Services.AddScoped<ILabAnalysisService, LabAnalysisService>();

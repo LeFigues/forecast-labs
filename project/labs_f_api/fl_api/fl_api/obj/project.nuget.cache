@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "ckAyL5jj1K4=",
-  "success": false,
+  "dgSpecHash": "jPiiPMwkOJs=",
+  "success": true,
   "projectFilePath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\fl_api\\fl_api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\figue\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
@@ -77,15 +77,5 @@
     "C:\\Users\\figue\\.nuget\\packages\\system.text.json\\6.0.10\\system.text.json.6.0.10.nupkg.sha512",
     "C:\\Users\\figue\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "No se encuentra información del proyecto para \"C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\ExtracPDF\\ExtracPDF.pyproj\". Si está usando Visual Studio, puede deberse a que el proyecto no se haya cargado o no forme parte de la solución actual, por lo que debe ejecutar una restauración desde la línea de comandos. De lo contrario, puede que el archivo del proyecto no sea válido o que falten destinos necesarios para la restauración.",
-      "libraryId": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\ExtracPDF\\ExtracPDF.pyproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  "logs": []
 }

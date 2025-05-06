@@ -26,5 +26,9 @@ namespace fl_api.Repositories
         {
             return await _collection.Find(_ => true).ToListAsync();
         }
+        public async Task<PlanningDto?> GetByIdAsync(string id)
+        {
+            return await _collection.Find(x => x.Id == id).FirstOrDefaultAsync();
+        }
     }
 }

@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{140E54A5-DC68-4289-A85B-AE0ED852455C}|fl_students_mvc\\fl_students_mvc.csproj|solutionrelative:fl_students_mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{140E54A5-DC68-4289-A85B-AE0ED852455C}|fl_students_mvc\\fl_students_mvc.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{140E54A5-DC68-4289-A85B-AE0ED852455C}|fl_students_mvc\\fl_students_mvc.csproj|solutionrelative:fl_students_mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{926EFF53-4B1B-45F4-B68C-EEC4D5331A83}|fl_students\\fl_students.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{926EFF53-4B1B-45F4-B68C-EEC4D5331A83}|fl_students\\fl_students.csproj|solutionrelative:fl_students\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{926EFF53-4B1B-45F4-B68C-EEC4D5331A83}|fl_students\\fl_students.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students\\controllers\\sgroupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{926EFF53-4B1B-45F4-B68C-EEC4D5331A83}|fl_students\\fl_students.csproj|solutionrelative:fl_students\\controllers\\sgroupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{926EFF53-4B1B-45F4-B68C-EEC4D5331A83}|fl_students\\fl_students.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{926EFF53-4B1B-45F4-B68C-EEC4D5331A83}|fl_students\\fl_students.csproj|solutionrelative:fl_students\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{926EFF53-4B1B-45F4-B68C-EEC4D5331A83}|fl_students\\fl_students.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students\\controllers\\sgroupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{926EFF53-4B1B-45F4-B68C-EEC4D5331A83}|fl_students\\fl_students.csproj|solutionrelative:fl_students\\controllers\\sgroupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A156A435-1201-4376-A9FD-C0C21992D11E}|fl_students_lib\\fl_students_lib.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_lib\\models\\sgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,11 +46,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_mvc\\Program.cs",
+              "RelativeDocumentMoniker": "fl_students_mvc\\Program.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_mvc\\Program.cs",
+              "RelativeToolTip": "fl_students_mvc\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T23:56:19.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -56,7 +73,7 @@
               "RelativeDocumentMoniker": "fl_students_mvc\\appsettings.json",
               "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_mvc\\appsettings.json",
               "RelativeToolTip": "fl_students_mvc\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAACaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-04-29T01:02:58.006Z",
               "EditorCaption": ""
@@ -76,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students\\appsettings.json",
               "RelativeDocumentMoniker": "fl_students\\appsettings.json",
@@ -89,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SGroup.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_lib\\Models\\SGroup.cs",
               "RelativeDocumentMoniker": "fl_students_lib\\Models\\SGroup.cs",
@@ -101,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SGroupsController.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students\\Controllers\\SGroupsController.cs",
               "RelativeDocumentMoniker": "fl_students\\Controllers\\SGroupsController.cs",
@@ -109,12 +126,11 @@
               "RelativeToolTip": "fl_students\\Controllers\\SGroupsController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAACcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T00:50:23.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T00:50:23.102Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "SubjectsController.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students\\Controllers\\SubjectsController.cs",
               "RelativeDocumentMoniker": "fl_students\\Controllers\\SubjectsController.cs",
@@ -126,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "CareersController.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students\\Controllers\\CareersController.cs",
               "RelativeDocumentMoniker": "fl_students\\Controllers\\CareersController.cs",
@@ -138,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "DataContext.cs",
               "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_lib\\Data\\DataContext.cs",
               "RelativeDocumentMoniker": "fl_students_lib\\Data\\DataContext.cs",

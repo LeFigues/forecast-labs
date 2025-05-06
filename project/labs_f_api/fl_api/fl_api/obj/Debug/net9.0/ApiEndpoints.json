@@ -21,8 +21,40 @@
   },
   {
     "ContainingType": "fl_api.Controllers.PdfController",
+    "Method": "AnalyzePdf",
+    "RelativePath": "api/Pdf/analyze",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.PdfController",
     "Method": "AnalyzeAndSave",
     "RelativePath": "api/Pdf/analyze-and-save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.PdfController",
+    "Method": "AnalyzePdfPreview",
+    "RelativePath": "api/Pdf/analyze-preview",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -48,7 +80,7 @@
   {
     "ContainingType": "fl_api.Controllers.PlanningController",
     "Method": "GetAllPlannings",
-    "RelativePath": "api/Planning",
+    "RelativePath": "api/Planning/getall",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -57,8 +89,24 @@
   },
   {
     "ContainingType": "fl_api.Controllers.PlanningController",
+    "Method": "GetPlanningById",
+    "RelativePath": "api/Planning/getbyid/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.PlanningController",
     "Method": "CreatePlanning",
-    "RelativePath": "api/Planning",
+    "RelativePath": "api/Planning/insert",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -99,6 +147,105 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SupplyReportsController",
+    "Method": "GetAll",
+    "RelativePath": "api/SupplyReports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[fl_api.Models.SupplyReport, fl_api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SupplyReportsController",
+    "Method": "Create",
+    "RelativePath": "api/SupplyReports",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "report",
+        "Type": "fl_api.Models.SupplyReport",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SupplyReportsController",
+    "Method": "Get",
+    "RelativePath": "api/SupplyReports/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "fl_api.Models.SupplyReport",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SupplyReportsController",
+    "Method": "Update",
+    "RelativePath": "api/SupplyReports/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "report",
+        "Type": "fl_api.Models.SupplyReport",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fl_api.Controllers.SupplyReportsController",
+    "Method": "Delete",
+    "RelativePath": "api/SupplyReports/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

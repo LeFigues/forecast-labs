@@ -32,11 +32,7 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {
-              "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\ExtracPDF\\ExtracPDF.pyproj": {
-                "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\ExtracPDF\\ExtracPDF.pyproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {

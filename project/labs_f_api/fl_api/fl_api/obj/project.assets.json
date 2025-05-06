@@ -3334,7 +3334,6 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\ExtracPDF\\ExtracPDF.pyproj",
       "Google.Cloud.Firestore >= 3.10.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 9.0.4",
       "Microsoft.AspNetCore.OpenApi >= 9.0.0",
@@ -3379,11 +3378,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\ExtracPDF\\ExtracPDF.pyproj": {
-              "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\ExtracPDF\\ExtracPDF.pyproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -3465,16 +3460,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "No se encuentra información del proyecto para \"C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\ExtracPDF\\ExtracPDF.pyproj\". Si está usando Visual Studio, puede deberse a que el proyecto no se haya cargado o no forme parte de la solución actual, por lo que debe ejecutar una restauración desde la línea de comandos. De lo contrario, puede que el archivo del proyecto no sea válido o que falten destinos necesarios para la restauración.",
-      "libraryId": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\labs_f_api\\fl_api\\ExtracPDF\\ExtracPDF.pyproj",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  }
 }

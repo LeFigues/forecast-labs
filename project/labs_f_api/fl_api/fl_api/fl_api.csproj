@@ -26,8 +26,4 @@
     <Folder Include="Utils\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ExtracPDF\ExtracPDF.pyproj" />
-  </ItemGroup>
-
 </Project>
