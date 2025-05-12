@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\fl_api.props" />
-</Project>

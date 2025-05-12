@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\FL_Front_Web_SIN.props" />
-</Project>
