@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fl_api", "fl_api\fl_api.csproj", "{36466310-9294-471A-A502-4B397D46C4F2}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PyAnalyze", "PyAnalyze\PyAnalyze.pyproj", "{DA2B32FA-70C5-4DBC-B7E0-B380B8927BBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fl_front", "fl_front\fl_front.csproj", "{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36466310-9294-471A-A502-4B397D46C4F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36466310-9294-471A-A502-4B397D46C4F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36466310-9294-471A-A502-4B397D46C4F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36466310-9294-471A-A502-4B397D46C4F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA2B32FA-70C5-4DBC-B7E0-B380B8927BBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA2B32FA-70C5-4DBC-B7E0-B380B8927BBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88F9CE8D-E55F-4BF3-B678-C2A218987C47}
+	EndGlobalSection
+EndGlobal

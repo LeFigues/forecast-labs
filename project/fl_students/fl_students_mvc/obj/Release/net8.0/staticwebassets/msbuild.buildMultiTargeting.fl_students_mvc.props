@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\fl_students_mvc.props" />
+</Project>

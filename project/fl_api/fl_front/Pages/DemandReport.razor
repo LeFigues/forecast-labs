@@ -1,0 +1,153 @@
+﻿@page "/demand-reports"
+@using fl_front.Services
+@using fl_front.Models
+@inject IDemandReportService DemandReportService
+
+<h3 class="mb-4 text-center">📈 Reportes de Demanda</h3>
+
+@if (isLoading)
+{
+    <div class="text-center">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+}
+else
+{
+    <div>
+        <ul class="nav nav-tabs mb-3" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link @(activeTab == "summary" ? "active" : "")" @onclick="@(() => activeTab = "summary")">Resumen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @(activeTab == "detail" ? "active" : "")" @onclick="@(() => activeTab = "detail")">Detalle</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @(activeTab == "simulation" ? "active" : "")" @onclick="@(() => activeTab = "simulation")">Simulación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link @(activeTab == "history" ? "active" : "")" @onclick="@(() => activeTab = "history")">Historial</a>
+            </li>
+        </ul>
+
+
+
+        @switch (activeTab)
+        {
+            case "summary":
+                <div>
+                    <h5>Resumen</h5>
+                    <p><strong>Equipos:</strong> @summary?.TotalEquipmentItems</p>
+                    <p><strong>Insumos:</strong> @summary?.TotalSupplyItems</p>
+                    <p><strong>Reactivos:</strong> @summary?.TotalReactiveItems</p>
+                </div>
+                break;
+
+            case "detail":
+                <div>
+                    <h5>Detalle</h5>
+                    @foreach (var item in detail)
+                    {
+                        <div class="mb-3">
+                            <h6>@item.CareerName - @item.SubjectName</h6>
+                            <ul>
+                                @foreach (var eq in item.Equipment)
+                                {
+                                    <li>🧪 @eq.Description: @eq.TotalQuantity @eq.Unit</li>
+                                }
+                                @foreach (var su in item.Supplies)
+                                {
+                                    <li>📦 @su.Description: @su.TotalQuantity @su.Unit</li>
+                                }
+                                @foreach (var re in item.Reactives)
+                                {
+                                    <li>🧫 @re.Description: @re.TotalQuantity @re.Unit</li>
+                                }
+                            </ul>
+                        </div>
+                    }
+                </div>
+                break;
+
+            case "simulation":
+                <div>
+                    <h5>Simulación</h5>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Descripción</th>
+                                <th>Unidad</th>
+                                <th>Demanda total</th>
+                                <th>Uso diario</th>
+                                <th>Pedido sugerido</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var sim in simulation?.Items ?? new())
+                            {
+                                <tr>
+                                    <td>@sim.Description</td>
+                                    <td>@sim.Unit</td>
+                                    <td>@sim.TotalDemand</td>
+                                    <td>@sim.AverageDailyUse</td>
+                                    <td>@sim.RecommendedOrder</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                break;
+
+            case "history":
+                <div>
+                    <h5>Historial</h5>
+                    <table class="table table-sm">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Ítem</th>
+                                <th>Unidad</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var h in history)
+                            {
+                                <tr>
+                                    <td>@h.Date.ToLocalTime().ToString("dd/MM/yyyy")</td>
+                                    <td>@h.Item</td>
+                                    <td>@h.Unit</td>
+                                    <td>@h.Quantity</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                break;
+        }
+    </div>
+}
+
+@code {
+    private string activeTab = "summary";
+    private bool isLoading = true;
+
+    private DemandSummary? summary;
+    private List<DemandDetail> detail = new();
+    private DemandSimulation? simulation;
+    private List<DemandHistoryItem> history = new();
+
+    private readonly DateTime from = new(2025, 05, 01);
+    private readonly DateTime to = new(2025, 05, 11);
+
+    protected override async Task OnInitializedAsync()
+    {
+        isLoading = true;
+        summary = await DemandReportService.GetSummaryAsync(from, to);
+        detail = await DemandReportService.GetDetailAsync(from, to);
+        simulation = await DemandReportService.GetSimulationAsync(from, to);
+        history = await DemandReportService.GetHistoryAsync(from, to);
+        isLoading = false;
+    }
+}

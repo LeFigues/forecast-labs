@@ -1,0 +1,398 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2B32FA-70C5-4DBC-B7E0-B380B8927BBD}|PyAnalyze\\PyAnalyze.pyproj|C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\PyAnalyze\\pdf_to_json.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DA2B32FA-70C5-4DBC-B7E0-B380B8927BBD}|PyAnalyze\\PyAnalyze.pyproj|solutionrelative:PyAnalyze\\pdf_to_json.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA2B32FA-70C5-4DBC-B7E0-B380B8927BBD}|PyAnalyze\\PyAnalyze.pyproj|C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\PyAnalyze\\PyAnalyze.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DA2B32FA-70C5-4DBC-B7E0-B380B8927BBD}|PyAnalyze\\PyAnalyze.pyproj|solutionrelative:PyAnalyze\\PyAnalyze.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\pages\\uploadpdf.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\uploadpdf.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\pages\\forecast.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\forecast.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\pages\\demandreport.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\demandreport.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\pages\\health.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\pages\\health.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0AB7EECC-17DA-4594-ADBA-B16EED9A8AA5}|fl_front\\fl_front.csproj|solutionrelative:fl_front\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\controllers\\planningcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\controllers\\planningcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\dtos\\planningcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\dtos\\planningcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\services\\planningservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\services\\planningservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\dtos\\planningresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\dtos\\planningresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\interfaces\\iplanningservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\interfaces\\iplanningservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\models\\planningrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\models\\planningrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\dtos\\planningupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\dtos\\planningupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\interfaces\\istudentsapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\interfaces\\istudentsapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|c:\\users\\figue\\onedrive\\escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36466310-9294-471A-A502-4B397D46C4F2}|fl_api\\fl_api.csproj|solutionrelative:fl_api\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "pdf_to_json.py",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\PyAnalyze\\pdf_to_json.py",
+              "RelativeDocumentMoniker": "PyAnalyze\\pdf_to_json.py",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\PyAnalyze\\pdf_to_json.py",
+              "RelativeToolTip": "PyAnalyze\\pdf_to_json.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-05-12T23:28:46.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PyAnalyze.py",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\PyAnalyze\\PyAnalyze.py",
+              "RelativeDocumentMoniker": "PyAnalyze\\PyAnalyze.py",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\PyAnalyze\\PyAnalyze.py",
+              "RelativeToolTip": "PyAnalyze\\PyAnalyze.py",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-05-12T23:28:38.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "fl_front\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Pages\\Home.razor",
+              "RelativeToolTip": "fl_front\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T23:04:30.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Forecast.razor",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Pages\\Forecast.razor",
+              "RelativeDocumentMoniker": "fl_front\\Pages\\Forecast.razor",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Pages\\Forecast.razor",
+              "RelativeToolTip": "fl_front\\Pages\\Forecast.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T23:04:25.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DemandReport.razor",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Pages\\DemandReport.razor",
+              "RelativeDocumentMoniker": "fl_front\\Pages\\DemandReport.razor",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Pages\\DemandReport.razor",
+              "RelativeToolTip": "fl_front\\Pages\\DemandReport.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T23:04:19.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UploadPdf.razor",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Pages\\UploadPdf.razor",
+              "RelativeDocumentMoniker": "fl_front\\Pages\\UploadPdf.razor",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Pages\\UploadPdf.razor",
+              "RelativeToolTip": "fl_front\\Pages\\UploadPdf.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T23:02:23.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "fl_front\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\wwwroot\\index.html",
+              "RelativeToolTip": "fl_front\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-12T23:00:09.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\appsettings.json",
+              "RelativeDocumentMoniker": "fl_api\\appsettings.json",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\appsettings.json",
+              "RelativeToolTip": "fl_api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-12T22:59:08.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Health.razor",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Pages\\Health.razor",
+              "RelativeDocumentMoniker": "fl_front\\Pages\\Health.razor",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Pages\\Health.razor",
+              "RelativeToolTip": "fl_front\\Pages\\Health.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T22:55:46.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "fl_front\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "fl_front\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T22:52:44.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "fl_front\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_front\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "fl_front\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-12T22:52:20.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IStudentsApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Interfaces\\IStudentsApiClient.cs",
+              "RelativeDocumentMoniker": "fl_api\\Interfaces\\IStudentsApiClient.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Interfaces\\IStudentsApiClient.cs",
+              "RelativeToolTip": "fl_api\\Interfaces\\IStudentsApiClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:07:19.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "fl_api\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Models\\Student.cs",
+              "RelativeToolTip": "fl_api\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:06:32.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PlanningRecord.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Models\\PlanningRecord.cs",
+              "RelativeDocumentMoniker": "fl_api\\Models\\PlanningRecord.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Models\\PlanningRecord.cs",
+              "RelativeToolTip": "fl_api\\Models\\PlanningRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:06:12.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Dtos\\StudentDto.cs",
+              "RelativeDocumentMoniker": "fl_api\\Dtos\\StudentDto.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Dtos\\StudentDto.cs",
+              "RelativeToolTip": "fl_api\\Dtos\\StudentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:05:51.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PlanningCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Dtos\\PlanningCreateDto.cs",
+              "RelativeDocumentMoniker": "fl_api\\Dtos\\PlanningCreateDto.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Dtos\\PlanningCreateDto.cs",
+              "RelativeToolTip": "fl_api\\Dtos\\PlanningCreateDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:05:31.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PlanningService.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Services\\PlanningService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Services\\PlanningService.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Services\\PlanningService.cs",
+              "RelativeToolTip": "fl_api\\Services\\PlanningService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAIwDgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:20:30.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PlanningUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Dtos\\PlanningUpdateDto.cs",
+              "RelativeDocumentMoniker": "fl_api\\Dtos\\PlanningUpdateDto.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Dtos\\PlanningUpdateDto.cs",
+              "RelativeToolTip": "fl_api\\Dtos\\PlanningUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:19:39.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlanningController.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Controllers\\PlanningController.cs",
+              "RelativeDocumentMoniker": "fl_api\\Controllers\\PlanningController.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Controllers\\PlanningController.cs",
+              "RelativeToolTip": "fl_api\\Controllers\\PlanningController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAYwDAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:21:23.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IPlanningService.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Interfaces\\IPlanningService.cs",
+              "RelativeDocumentMoniker": "fl_api\\Interfaces\\IPlanningService.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Interfaces\\IPlanningService.cs",
+              "RelativeToolTip": "fl_api\\Interfaces\\IPlanningService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:12:50.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PlanningResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Dtos\\PlanningResponseDto.cs",
+              "RelativeDocumentMoniker": "fl_api\\Dtos\\PlanningResponseDto.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Dtos\\PlanningResponseDto.cs",
+              "RelativeToolTip": "fl_api\\Dtos\\PlanningResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:39:14.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Program.cs",
+              "RelativeDocumentMoniker": "fl_api\\Program.cs",
+              "ToolTip": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api\\Program.cs",
+              "RelativeToolTip": "fl_api\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T17:19:19.475Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

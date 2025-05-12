@@ -1,0 +1,83 @@
+﻿@page "/forecast"
+@inject IForecastService ForecastService
+@using fl_front.Models
+@using System.Globalization
+@using fl_front.Services
+
+<h3 class="mb-4 text-center">📊 Predicción de Demanda</h3>
+
+<div class="row mb-3">
+    <div class="col-md-3">
+        <label class="form-label">Desde</label>
+        <InputDate class="form-control" @bind-Value="from" />
+    </div>
+    <div class="col-md-3">
+        <label class="form-label">Hasta</label>
+        <InputDate class="form-control" @bind-Value="to" />
+    </div>
+    <div class="col-md-3">
+        <label class="form-label">Horizonte</label>
+        <select class="form-select" @bind="horizon">
+            <option value="monthly">Mensual</option>
+            <option value="weekly">Semanal</option>
+            <option value="daily">Diario</option>
+        </select>
+    </div>
+    <div class="col-md-3 d-flex align-items-end">
+        <button class="btn btn-primary w-100" @onclick="GetForecast">Generar Predicción</button>
+    </div>
+</div>
+
+@if (isLoading)
+{
+    <div class="text-center">
+        <div class="spinner-border text-info" role="status">
+            <span class="visually-hidden">Cargando predicción...</span>
+        </div>
+    </div>
+}
+else if (forecastResults.Any())
+{
+    <h5>Resultados:</h5>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Periodo</th>
+                <th>Demanda Pronosticada</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in forecastResults)
+            {
+                <tr>
+                    <td>@item.PeriodStart.ToString("MMMM yyyy", CultureInfo.CreateSpecificCulture("es-ES"))</td>
+                    <td>@item.ForecastedQuantity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private DateTime from = new(2025, 3, 11);
+    private DateTime to = new(2025, 5, 11);
+    private string horizon = "monthly";
+    private bool isLoading = false;
+    private List<ForecastResult> forecastResults = new();
+
+    private async Task GetForecast()
+    {
+        isLoading = true;
+        forecastResults.Clear();
+
+        var request = new ForecastRequest
+            {
+                From = from.ToString("yyyy-MM-dd"),
+                To = to.ToString("yyyy-MM-dd"),
+                Horizon = horizon
+            };
+
+        forecastResults = await ForecastService.GetForecastAsync(request);
+        isLoading = false;
+    }
+}

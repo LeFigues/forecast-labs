@@ -1,0 +1,276 @@
+﻿@page "/upload"
+@inject IStudentsService StudentsService
+@inject IDocumentService DocumentService
+@inject AppState AppState
+@using fl_front.Models
+@using Microsoft.AspNetCore.Components.Forms
+@using fl_front.Services
+
+<h3 class="mb-4 text-center">📄 Subir Guía de Laboratorio</h3>
+
+@if (isLoading)
+{
+    <div class="d-flex justify-content-center my-4">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+}
+else
+{
+    @if (!isUploading && !isAnalyzing && analysisResult is null)
+    {
+        <div class="mb-3">
+            <label class="form-label">Carrera</label>
+            <select class="form-select" @onchange="OnCareerChanged">
+                <option value="">Seleccione una carrera</option>
+                @foreach (var career in careers)
+                {
+                    <option value="@career.Id">@career.Name</option>
+                }
+            </select>
+        </div>
+
+        @if (subjects.Any())
+        {
+            <div class="mb-3">
+                <label class="form-label">Materia</label>
+                <select class="form-select" @bind="selectedSubjectId">
+                    <option value="">Seleccione una materia</option>
+                    @foreach (var subject in subjects)
+                    {
+                        <option value="@subject.Id">@subject.Name</option>
+                    }
+                </select>
+            </div>
+        }
+
+        <div class="mb-3">
+            <label class="form-label">Archivo PDF</label>
+            <InputFile class="form-control" OnChange="OnFileSelected" />
+        </div>
+
+        <button class="btn btn-primary" @onclick="UploadFile" disabled="@(!CanUpload)">
+            <span>Subir PDF</span>
+        </button>
+    }
+
+    @if (isUploading || isAnalyzing)
+    {
+        <div class="d-flex justify-content-center my-5">
+            <div class="spinner-border text-info me-2" role="status">
+                <span class="visually-hidden">Procesando...</span>
+            </div>
+            <span class="fs-5">Procesando análisis con OpenAI...</span>
+        </div>
+    }
+
+    @if (analysisResult is not null && !isAnalyzing)
+    {
+        <div class="mt-5">
+            <h4>📊 Resultado del Análisis</h4>
+
+            <div class="mb-4">
+                <div class="card border-primary shadow-sm mb-3">
+                    <div class="card-body">
+                        <h6 class="card-title">📁 Archivo</h6>
+                        <p class="card-text"><strong>@analysisResult.FileName</strong></p>
+                        <p class="card-text"><small>ID: @analysisResult.DocumentId</small></p>
+                    </div>
+                </div>
+
+                <div class="card border-success shadow-sm mb-3">
+                    <div class="card-body">
+                        <h6 class="card-title">📌 Información del documento</h6>
+                        <p><strong>Título:</strong> @analysisResult.Title</p>
+                        <p><strong>Código:</strong> @analysisResult.Code</p>
+                        <p><strong>Versión:</strong> @analysisResult.Version</p>
+                        <p><strong>Práctica Nº:</strong> @analysisResult.PracticeNumber</p>
+                        <p><strong>Grupos indicados:</strong> @analysisResult.Groups</p>
+                    </div>
+                </div>
+
+                <div class="card border-info shadow-sm mb-3">
+                    <div class="card-body">
+                        <h6 class="card-title">🧠 Modelo utilizado</h6>
+                        <p><strong>@analysisResult.ModelUsed</strong></p>
+                        <p><strong>Analizado el:</strong> @analysisResult.AnalyzedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm:ss")</p>
+                    </div>
+                </div>
+
+                @if (analysisResult.SatisfactionPercentage > 0)
+                {
+                    <div class="card border-warning shadow-sm mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title">🎯 Satisfacción</h6>
+                            <p>@analysisResult.SatisfactionPercentage %</p>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <h5 class="mt-4">🧪 Equipos</h5>
+            @if (analysisResult.AnalysisResult.Materials.Equipment.Any())
+            {
+                @foreach (var item in analysisResult.AnalysisResult.Materials.Equipment)
+                {
+                    <div class="card shadow-sm mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title">@item.Description</h6>
+                            <p class="card-text">
+                                Cantidad por grupo: <strong>@item.Quantity_Per_Group</strong><br />
+                                Unidad: <strong>@item.Unit</strong>
+                            </p>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p class="text-muted">No se encontraron equipos.</p>
+            }
+
+            <h5 class="mt-4">📦 Insumos</h5>
+            @if (analysisResult.AnalysisResult.Materials.Supplies.Any())
+            {
+                @foreach (var item in analysisResult.AnalysisResult.Materials.Supplies)
+                {
+                    <div class="card shadow-sm mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title">@item.Description</h6>
+                            <p class="card-text">
+                                Cantidad por grupo: <strong>@item.Quantity_Per_Group</strong><br />
+                                Unidad: <strong>@item.Unit</strong>
+                            </p>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p class="text-muted">No se encontraron insumos.</p>
+            }
+
+            <h5 class="mt-4">🧫 Reactivos</h5>
+            @if (analysisResult.AnalysisResult.Materials.Reactives.Any())
+            {
+                @foreach (var item in analysisResult.AnalysisResult.Materials.Reactives)
+                {
+                    <div class="card shadow-sm mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title">@item.Description</h6>
+                            <p class="card-text">
+                                Cantidad por grupo: <strong>@item.Quantity_Per_Group</strong><br />
+                                Unidad: <strong>@item.Unit</strong>
+                            </p>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p class="text-muted">No se encontraron reactivos.</p>
+            }
+        </div>
+    }
+}
+
+@code {
+    private List<Career> careers = new();
+    private List<Subject> subjects = new();
+
+    private int selectedCareerId;
+    private int selectedSubjectId;
+    private IBrowserFile? selectedFile;
+
+    private bool isLoading = true;
+    private bool isUploading = false;
+    private bool showNextButtons = false;
+    private bool isAnalyzing = false;
+    private AnalysisResponse? analysisResult;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            careers = await StudentsService.GetCareersAsync();
+
+            if (AppState.LastAnalysis is not null)
+            {
+                analysisResult = AppState.LastAnalysis;
+                showNextButtons = true;
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al cargar carreras: {ex.Message}");
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task OnCareerChanged(ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value?.ToString(), out var id))
+        {
+            selectedCareerId = id;
+            var career = careers.FirstOrDefault(c => c.Id == id);
+            subjects = career?.Subjects ?? new List<Subject>();
+            selectedSubjectId = 0;
+        }
+    }
+
+    private void OnFileSelected(InputFileChangeEventArgs e)
+    {
+        selectedFile = e.File;
+    }
+
+    private bool CanUpload =>
+        selectedFile != null &&
+        selectedCareerId > 0 &&
+        selectedSubjectId > 0;
+
+    private async Task UploadFile()
+    {
+        if (!CanUpload || selectedFile == null) return;
+
+        isUploading = true;
+        showNextButtons = false;
+        isAnalyzing = false;
+
+        try
+        {
+            using var stream = selectedFile.OpenReadStream(10 * 1024 * 1024);
+            var uploadResult = await DocumentService.UploadPdfAsync(stream, selectedFile.Name, selectedCareerId, selectedSubjectId);
+
+            if (uploadResult is not null)
+            {
+                AppState.LastUpload = uploadResult;
+                showNextButtons = true;
+                isAnalyzing = true;
+
+                analysisResult = await DocumentService.AnalyzeWithOpenAIAsync(uploadResult.Id);
+                AppState.LastAnalysis = analysisResult;
+                isAnalyzing = false;
+
+                // NUEVO: Clasificar después del análisis
+                if (analysisResult is not null)
+                {
+                    var subjectName = analysisResult.Subject ?? "Sin nombre";
+                    await DocumentService.ClassifyDocumentAsync(analysisResult.DocumentId, subjectName);
+                }
+
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al subir o analizar PDF: {ex.Message}");
+        }
+        finally
+        {
+            isUploading = false;
+        }
+    }
+}
