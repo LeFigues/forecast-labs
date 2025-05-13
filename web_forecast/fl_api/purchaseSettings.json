@@ -1,0 +1,8 @@
+{
+  "PurchaseSimulationSettings": {
+    // Días de cobertura deseados (p.ej. 30 días de stock)
+    "CoverageDays": 30,
+    // Plazo de entrega (lead time) en días
+    "LeadTimeDays": 7
+  }
+}

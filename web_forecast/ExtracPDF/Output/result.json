@@ -1,0 +1,26 @@
+{
+  "file": "LAB 10 REDES Y COMUNICACION DE DATOS II v3.pdf",
+  "content": "3. MATERIALES, REACTIVOS Y EQUIPOS. -\nEQUIPOS\nObservaciones\nCantidad Unidad Descripción\n1 Pza Router Inalámbrico\nLa práctica es para 1 grupo de 2\nPC (Windows con un programa de estudiantes, la capacidad del\n2 Pza emulación de terminal, como Tera Laboratorio es de 10 grupos\nTerm)\nINSUMOS\nObservaciones\nCantidad Unidad Descripción\nLa práctica es para 1 grupo de 2\n2 Pza CABLE ETHERNET estudiantes, la capacidad del\nLaboratorio es de 10 grupos\nNota : Todas las configuraciones inalámbricas en esta práctica de laboratorio son para una\nconexión inalámbrica de 2,4 GHz. Siga los mismos pasos para configurar una conexión\ninalámbrica de 5 GHz o cuando configure conexiones de 2,4 GHz y 5 GHz.",
+  "groups": 0,
+  "materials": {
+    "equipment": [
+      {
+        "quantity_per_group": 1,
+        "unit": "Pza",
+        "description": "Router Inalámbrico La práctica es para 1 grupo de 2 PC (Windows con un programa de estudiantes, la capacidad del"
+      },
+      {
+        "quantity_per_group": 2,
+        "unit": "Pza",
+        "description": "emulación de terminal, como Tera Laboratorio es de 10 grupos Term)"
+      }
+    ],
+    "supplies": [
+      {
+        "quantity_per_group": 2,
+        "unit": "Pza",
+        "description": "CABLE ETHERNET estudiantes, la capacidad del Laboratorio es de 10 grupos Nota : Todas las configuraciones inalámbricas en esta práctica de laboratorio son para una conexión inalámbrica de 2,4 GHz. Siga los mismos pasos para configurar una conexión inalámbrica de 5 GHz o cuando configure conexiones de 2,4 GHz y 5 GHz."
+      }
+    ]
+  }
+}
