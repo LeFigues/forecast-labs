@@ -2,10 +2,14 @@
 using System.Net.Http.Headers;
 using fl_api.Configurations;
 using fl_api.Interfaces;
+using fl_api.Repositories.Impl;
+using fl_api.Repositories;
 using fl_api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using University.Interfaces;
+using University.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -54,6 +58,11 @@ builder.Services.AddTransient<IClassificationService, ClassificationService>();
 builder.Services.AddTransient<IPdfProcessingService, PdfProcessingService>();
 builder.Services.AddSingleton<IPlanningService, PlanningService>();
 
+
+builder.Services.AddScoped<IForecastRiesgoRepository, ForecastRiesgoRepository>();
+builder.Services.AddScoped<IForecastHistoricoRepository, ForecastHistoricoRepository>();
+builder.Services.AddScoped<IForecastPracticaRepository, ForecastPracticaRepository>();
+
 // 6) Clientes HTTP configurados
 builder.Services.AddHttpClient<IOpenAIClient, OpenAIClient>(client =>
 {
@@ -73,7 +82,10 @@ builder.Services.AddHttpClient<ILabsApiClient, LabsApiClient>(client =>
     client.BaseAddress = new Uri(builder.Configuration["ApiLabs:BaseUrl"]!);
     client.Timeout = TimeSpan.FromSeconds(20);
 });
-
+builder.Services.AddHttpClient<IUniversityApiClient, UniversityApiClient>(client =>
+{
+    client.BaseAddress = new Uri("https://universidad-la9h.onrender.com");
+});
 var app = builder.Build();
 
 // 7) Middleware de manejo de errores global

@@ -17,7 +17,8 @@
           "Newtonsoft.Json.Bson": "1.0.3",
           "OpenAI": "2.1.0",
           "Swashbuckle.AspNetCore.Swagger": "8.1.1",
-          "System.Net.Http.Json": "9.0.4"
+          "System.Net.Http.Json": "9.0.4",
+          "University": "1.0.0"
         },
         "runtime": {
           "fl_api.dll": {}
@@ -397,6 +398,14 @@
             "fileVersion": "0.7.3.0"
           }
         }
+      },
+      "University/1.0.0": {
+        "runtime": {
+          "University.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -699,6 +708,11 @@
       "sha512": "sha512-U9Ix4l4cl58Kzz1rJzj5hoVTjmbx1qGMwzAcbv1j/d3NzrFaESIurQyg+ow4mivCgkE3S413y+U9k4WdnEIkRA==",
       "path": "zstdsharp.port/0.7.3",
       "hashPath": "zstdsharp.port.0.7.3.nupkg.sha512"
+    },
+    "University/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

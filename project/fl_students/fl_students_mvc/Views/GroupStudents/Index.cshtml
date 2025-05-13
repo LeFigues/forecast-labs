@@ -13,9 +13,6 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Score)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Student)
             </th>
             <th>
@@ -28,10 +25,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Score)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Student.Address)
+                    @item.Student.FirstName @item.Student.LastName
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Group.Name)

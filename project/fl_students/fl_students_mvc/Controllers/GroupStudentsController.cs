@@ -50,7 +50,7 @@ namespace fl_students_mvc.Controllers
         public IActionResult Create()
         {
             ViewData["GroupId"] = new SelectList(_context.SGroups, "Id", "Name");
-            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "LastName");
+            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "FirstName");
             return View();
         }
 
@@ -68,7 +68,7 @@ namespace fl_students_mvc.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["GroupId"] = new SelectList(_context.SGroups, "Id", "Name", groupStudent.GroupId);
-            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "LastName", groupStudent.StudentId);
+            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "FirstName", groupStudent.StudentId);
             return View(groupStudent);
         }
 
@@ -86,7 +86,7 @@ namespace fl_students_mvc.Controllers
                 return NotFound();
             }
             ViewData["GroupId"] = new SelectList(_context.SGroups, "Id", "Name", groupStudent.GroupId);
-            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "LastName", groupStudent.StudentId);
+            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "FirstName", groupStudent.StudentId);
             return View(groupStudent);
         }
 
@@ -123,7 +123,7 @@ namespace fl_students_mvc.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["GroupId"] = new SelectList(_context.SGroups, "Id", "Name", groupStudent.GroupId);
-            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "LastName", groupStudent.StudentId);
+            ViewData["StudentId"] = new SelectList(_context.Students, "Id", "FirstName", groupStudent.StudentId);
             return View(groupStudent);
         }
 

@@ -16,6 +16,6 @@ namespace fl_api.Services
         }
 
         public async Task<LabInfoDto> GetLabAsync(string id)
-            => await _http.GetFromJsonAsync<LabInfoDto>($"/api/Labs/{id}");
+            => await _http.GetFromJsonAsync<LabInfoDto>("/carreras/1");
     }
 }

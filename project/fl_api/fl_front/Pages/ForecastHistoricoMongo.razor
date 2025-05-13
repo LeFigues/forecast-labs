@@ -1,0 +1,166 @@
+﻿@page "/forecast-historico-insumos"
+@using System.Text.Json
+@inject HttpClient Http
+
+<h3 class="mt-3">📦 Historial de Forecast de Insumos</h3>
+
+@if (isLoading)
+{
+    <div class="d-flex justify-content-center mt-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+}
+else if (hasError)
+{
+    <div class="alert alert-danger text-center mt-4">
+        ❌ Error al cargar los datos desde la API.
+    </div>
+}
+else
+{
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <input class="form-control" placeholder="Buscar insumo..." @bind="searchTerm" @bind:event="oninput" />
+        </div>
+        <div class="col-md-6">
+            <select class="form-control" @bind="selectedMonth">
+                <option value="">Todos los meses</option>
+                @foreach (var mes in meses)
+                {
+                    <option value="@mes">@mes</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Insumo</th>
+                <th>Mes</th>
+                <th>Total Usado</th>
+                <th>Fecha Forecast</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in filteredData)
+            {
+                <tr>
+                    <td>@item.InsumoNombre</td>
+                    <td>@item.Mes</td>
+                    <td>@item.TotalUsado</td>
+                    <td>@item.FechaForecast.ToString("yyyy-MM-dd HH:mm")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (filteredData.Count == 0)
+    {
+        <div class="alert alert-warning text-center">
+            No se encontraron registros.
+        </div>
+    }
+}
+
+@code {
+    private List<ForecastRecord> allData = new();
+    private List<ForecastRecord> filteredData = new();
+    private List<string> meses = new();
+    private string searchTerm = string.Empty;
+    private string selectedMonth = string.Empty;
+    private bool isLoading = true;
+    private bool hasError = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var response = await Http.GetAsync("https://forecast.labs.underflabs.com/api/forecast/insumos-historico/historico");
+
+            if (!response.IsSuccessStatusCode)
+            {
+                hasError = true;
+                return;
+            }
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            if (content.TrimStart().StartsWith("<"))
+            {
+                hasError = true;
+                return;
+            }
+
+            ForecastRecord[]? data = null;
+            try
+            {
+                data = JsonSerializer.Deserialize<List<ForecastRecord>>(content, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    })?.ToArray();
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine("❌ Error al deserializar JSON: " + ex.Message);
+                hasError = true;
+                return;
+            }
+
+            if (data == null)
+            {
+                hasError = true;
+                return;
+            }
+
+            allData = data.OrderByDescending(x => x.Mes).ToList();
+            meses = allData.Select(x => x.Mes).Distinct().OrderByDescending(x => x).ToList();
+            ApplyFilters();
+        }
+        catch
+        {
+            hasError = true;
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void ApplyFilters()
+    {
+        filteredData = allData;
+
+        if (!string.IsNullOrWhiteSpace(searchTerm))
+        {
+            filteredData = filteredData
+                .Where(x => x.InsumoNombre.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+
+        if (!string.IsNullOrWhiteSpace(selectedMonth))
+        {
+            filteredData = filteredData
+                .Where(x => x.Mes == selectedMonth)
+                .ToList();
+        }
+    }
+
+    private class ForecastRecord
+    {
+        public ForecastId Id { get; set; } = new();
+        public DateTime FechaForecast { get; set; }
+        public string InsumoNombre { get; set; } = "";
+        public string Mes { get; set; } = "";
+        public int TotalUsado { get; set; }
+    }
+
+    private class ForecastId
+    {
+        public long Timestamp { get; set; }
+        public DateTime CreationTime { get; set; }
+    }
+
+}

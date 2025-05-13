@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fl_students_lib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b00792a6f289d185ab872417e02609823082c01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("fl_students_lib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fl_students_lib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

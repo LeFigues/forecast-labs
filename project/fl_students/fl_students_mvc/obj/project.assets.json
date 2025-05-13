@@ -6285,11 +6285,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_mvc\\fl_students_mvc.csproj",
+      "projectUniqueName": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_students\\fl_students_mvc\\fl_students_mvc.csproj",
       "projectName": "fl_students_mvc",
-      "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_mvc\\fl_students_mvc.csproj",
+      "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_students\\fl_students_mvc\\fl_students_mvc.csproj",
       "packagesPath": "C:\\Users\\figue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_mvc\\obj\\",
+      "outputPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_students\\fl_students_mvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6311,8 +6311,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_lib\\fl_students_lib.csproj": {
-              "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_lib\\fl_students_lib.csproj"
+            "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_students\\fl_students_lib\\fl_students_lib.csproj": {
+              "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_students\\fl_students_lib\\fl_students_lib.csproj"
             }
           }
         }

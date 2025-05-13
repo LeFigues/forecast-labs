@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+
+<NavLink class="nav-link d-flex align-items-center" href="@Href" Match="@Match">
+    <i class="bi me-2 @Icon" aria-hidden="true"></i> @Label
+</NavLink>
+
+@code {
+    [Parameter] public string Href { get; set; } = "";
+    [Parameter] public string Icon { get; set; } = "bi-list";
+    [Parameter] public string Label { get; set; } = "";
+    [Parameter] public NavLinkMatch Match { get; set; } = NavLinkMatch.Prefix;
+}

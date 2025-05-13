@@ -723,6 +723,16 @@
         "runtime": {
           "lib/net7.0/ZstdSharp.dll": {}
         }
+      },
+      "University/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/University.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/University.dll": {}
+        }
       }
     }
   },
@@ -1956,6 +1966,11 @@
         "zstdsharp.port.0.7.3.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "University/1.0.0": {
+      "type": "project",
+      "path": "../University/University.csproj",
+      "msbuildProject": "../University/University.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1969,7 +1984,8 @@
       "Newtonsoft.Json.Bson >= 1.0.3",
       "OpenAI >= 2.1.0",
       "Swashbuckle.AspNetCore.Swagger >= 8.1.1",
-      "System.Net.Http.Json >= 9.0.4"
+      "System.Net.Http.Json >= 9.0.4",
+      "University >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1979,11 +1995,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api.csproj",
+      "projectUniqueName": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\fl_api\\fl_api.csproj",
       "projectName": "fl_api",
-      "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\fl_api.csproj",
+      "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\fl_api\\fl_api.csproj",
       "packagesPath": "C:\\Users\\figue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_api\\fl_api\\obj\\",
+      "outputPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\fl_api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2004,7 +2020,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\University\\University.csproj": {
+              "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_api\\University\\University.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

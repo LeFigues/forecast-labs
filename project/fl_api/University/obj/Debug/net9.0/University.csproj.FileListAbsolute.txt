@@ -1,0 +1,11 @@
+C:\Users\figue\OneDrive\Escritorio\project2\fl_api\University\bin\Debug\net9.0\University.deps.json
+C:\Users\figue\OneDrive\Escritorio\project2\fl_api\University\bin\Debug\net9.0\University.dll
+C:\Users\figue\OneDrive\Escritorio\project2\fl_api\University\bin\Debug\net9.0\University.pdb
+C:\Users\figue\OneDrive\Escritorio\project2\fl_api\University\obj\Debug\net9.0\University.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\figue\OneDrive\Escritorio\project2\fl_api\University\obj\Debug\net9.0\University.AssemblyInfoInputs.cache
+C:\Users\figue\OneDrive\Escritorio\project2\fl_api\University\obj\Debug\net9.0\University.AssemblyInfo.cs
+C:\Users\figue\OneDrive\Escritorio\project2\fl_api\University\obj\Debug\net9.0\University.csproj.CoreCompileInputs.cache
+C:\Users\figue\OneDrive\Escritorio\project2\fl_api\University\obj\Debug\net9.0\University.dll
+C:\Users\figue\OneDrive\Escritorio\project2\fl_api\University\obj\Debug\net9.0\refint\University.dll
+C:\Users\figue\OneDrive\Escritorio\project2\fl_api\University\obj\Debug\net9.0\University.pdb
+C:\Users\figue\OneDrive\Escritorio\project2\fl_api\University\obj\Debug\net9.0\ref\University.dll

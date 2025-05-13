@@ -1,49 +1,24 @@
-﻿<div class="top-row ps-3 navbar navbar-dark bg-dark">
-    <div class="container-fluid bg-dark">
-        <a class="navbar-brand" href="">fl_front</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
+﻿<div class="top-row bg-dark text-white px-3 py-2" data-bs-theme="dark">
+    <h4 class="m-0">fl_front</h4>
 </div>
 
-<div class="@NavMenuCssClass nav-scrollable bg-dark" @onclick="ToggleNavMenu">
-    <nav class="nav flex-column bg-dark">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="upload">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Analizar Guias
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="demand-reports">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Demanda de Insumos
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="forecast">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Prediccion
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="health">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Health
-            </NavLink>
-        </div>
-    </nav>
+<div class="sidebar bg-black text-light p-3" style="min-height: 100vh;" data-bs-theme="dark">
+    <h6 class="text-uppercase text-secondary">General</h6>
+    <NavLink href="" class="nav-link-dark">🏠 Home</NavLink>
+    <NavLink href="health" class="nav-link-dark">📈 Status</NavLink>
+
+    <h6 class="mt-4 text-uppercase text-secondary">Análisis</h6>
+    <NavLink href="upload" class="nav-link-dark">📄 Analizar Guías</NavLink>
+    <NavLink href="demand-reports" class="nav-link-dark">📦 Demanda de Insumos</NavLink>
+
+    <h6 class="mt-4 text-uppercase text-secondary">Forecast</h6>
+    <NavLink href="forecastS" class="nav-link-dark">📊 Predicción</NavLink>
+    <NavLink href="insumos-historico-chart" class="nav-link-dark">📈 Insumos Histórico</NavLink>
+    <NavLink href="practicas-uso" class="nav-link-dark">📚 Prácticas Uso</NavLink>
+    <NavLink href="insumos-riesgo" class="nav-link-dark">⚠️ Insumos Riesgo</NavLink>
+    <NavLink href="insumos-riesgo-ai" class="nav-link-dark">🤖 Forecast IA</NavLink>
+
+    <h6 class="mt-4 text-uppercase text-secondary">Historial</h6>
+    <NavLink href="forecast-historico-insumos" class="nav-link-dark">🕘 Forecast Insumos</NavLink>
+    <NavLink href="forecast-historico-practicas" class="nav-link-dark">🕘 Forecast Prácticas</NavLink>
 </div>
-
-@code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-}

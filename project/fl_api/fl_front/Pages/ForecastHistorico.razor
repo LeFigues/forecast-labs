@@ -1,0 +1,176 @@
+﻿@page "/insumos-historico-chart"
+@using System.Text.Json
+@using ApexCharts
+@inject HttpClient Http
+
+<h3 class="mt-3">📄 Uso histórico de insumos</h3>
+
+@if (IsLoading)
+{
+    <div class="d-flex justify-content-center mt-4">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+}
+else
+{
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Buscar insumo..."
+                   @bind="SearchTerm" @bind:event="oninput" />
+        </div>
+        <div class="col-md-6">
+            <select class="form-control" @bind="SelectedMonth">
+                <option value="">Todos los meses</option>
+                @foreach (var mes in Meses)
+                {
+                    <option value="@mes">@mes</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <div class="mb-5">
+        <ApexChart TItem="ForecastHistoricoRecord" Title="Total usado por insumo">
+            <ApexPointSeries TItem="ForecastHistoricoRecord"
+                             Items="ChartDataByInsumo"
+                             XValue="@(item => item.InsumoNombre)"
+                             YValue="@(item => item.TotalUsado)" />
+        </ApexChart>
+    </div>
+
+
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Insumo</th>
+                <th>Mes</th>
+                <th>Total Usado</th>
+                <th>Fecha Forecast</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in FilteredData)
+            {
+                <tr>
+                    <td>@item.InsumoNombre</td>
+                    <td>@item.Mes</td>
+                    <td>@item.TotalUsado</td>
+                    <td>@item.FechaForecast.ToString("yyyy-MM-dd HH:mm")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (!FilteredData.Any())
+    {
+        <div class="alert alert-warning text-center mt-3">
+            No se encontraron registros con los filtros aplicados.
+        </div>
+    }
+}
+
+@code {
+    private List<ForecastHistoricoRecord> AllData = new();
+    private List<ForecastHistoricoRecord> FilteredData = new();
+    private List<string> Meses = new();
+    private string SearchTerm = "";
+    private string SelectedMonth = "";
+    private bool IsLoading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var response = await Http.GetAsync("https://forecast.labs.underflabs.com/api/forecast/insumos-historico/historico");
+            var content = await response.Content.ReadAsStringAsync();
+
+            var raw = JsonSerializer.Deserialize<List<RawForecastHistoricoRecord>>(content, new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            });
+
+            if (raw == null) return;
+
+            AllData = raw.Select(x => new ForecastHistoricoRecord
+            {
+                InsumoNombre = x.InsumoNombre?.Trim() ?? "",
+                Mes = x.Mes,
+                TotalUsado = x.TotalUsado,
+                FechaForecast = x.FechaForecast
+            }).OrderByDescending(x => x.Mes).ToList();
+
+            Meses = AllData.Select(x => x.Mes).Distinct().OrderByDescending(x => x).ToList();
+            ApplyFilters();
+        }
+        finally
+        {
+            IsLoading = false;
+        }
+    }
+
+    private void ApplyFilters()
+    {
+        FilteredData = AllData;
+
+        if (!string.IsNullOrWhiteSpace(SearchTerm))
+        {
+            FilteredData = FilteredData
+                .Where(x => x.InsumoNombre.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+
+        if (!string.IsNullOrWhiteSpace(SelectedMonth))
+        {
+            FilteredData = FilteredData
+                .Where(x => x.Mes == SelectedMonth)
+                .ToList();
+        }
+    }
+
+    private List<ForecastHistoricoRecord> ChartDataByInsumo => FilteredData
+        .GroupBy(x => x.InsumoNombre)
+        .Select(g => new ForecastHistoricoRecord
+        {
+            InsumoNombre = g.Key,
+            TotalUsado = g.Sum(x => x.TotalUsado)
+        }).ToList();
+
+    private List<ChartPoint> ChartDataByMes => FilteredData
+        .GroupBy(x => x.Mes)
+        .Select(g => new ChartPoint
+        {
+            Label = g.Key,
+            Value = g.Sum(x => x.TotalUsado)
+        }).OrderBy(x => x.Label).ToList();
+
+    private class RawForecastHistoricoRecord
+    {
+        public ForecastId Id { get; set; } = new();
+        public string InsumoNombre { get; set; } = "";
+        public string Mes { get; set; } = "";
+        public int TotalUsado { get; set; }
+        public DateTime FechaForecast { get; set; }
+    }
+
+    private class ForecastHistoricoRecord
+    {
+        public string InsumoNombre { get; set; } = "";
+        public string Mes { get; set; } = "";
+        public int TotalUsado { get; set; }
+        public DateTime FechaForecast { get; set; }
+    }
+
+    private class ForecastId
+    {
+        public long Timestamp { get; set; }
+        public DateTime CreationTime { get; set; }
+    }
+
+    private class ChartPoint
+    {
+        public string Label { get; set; } = "";
+        public int Value { get; set; }
+    }
+}

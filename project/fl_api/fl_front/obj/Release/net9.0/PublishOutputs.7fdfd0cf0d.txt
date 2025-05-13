@@ -1,0 +1,1 @@
+C:\Users\figue\OneDrive\Escritorio\project2\fl_api\fl_front\obj\Release\net9.0\browser-wasm\PubTmp\Out\web.config

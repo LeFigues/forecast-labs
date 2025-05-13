@@ -1,0 +1,116 @@
+﻿@page "/insumos-riesgo"
+@using ApexCharts
+@using fl_front.Dtos
+@using fl_front.Services
+@using fl_front.Services.Impl
+@inject IForecastService ForecastService
+
+<h3 class="mt-4">⚠️ Forecast de Insumos en Riesgo</h3>
+
+@if (IsLoading)
+{
+    <div class="d-flex justify-content-center mt-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover table-sortable">
+            <thead class="thead-dark">
+                <tr>
+                    <th @onclick="() => SortBy(nameof(ForecastRiesgoDto.InsumoNombre))">Insumo</th>
+                    <th @onclick="() => SortBy(nameof(ForecastRiesgoDto.StockActual))">Stock Actual</th>
+                    <th @onclick="() => SortBy(nameof(ForecastRiesgoDto.StockMinimo))">Stock Mínimo</th>
+                    <th @onclick="() => SortBy(nameof(ForecastRiesgoDto.UsoMensualPromedio))">Uso Promedio</th>
+                    <th @onclick="() => SortBy(nameof(ForecastRiesgoDto.MesesSobrantes))">Meses Restantes</th>
+                    <th @onclick="() => SortBy(nameof(ForecastRiesgoDto.Riesgo))">Riesgo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in data)
+                {
+                    <tr class="@GetRiesgoClass(item.Riesgo)">
+                        <td>@item.InsumoNombre</td>
+                        <td>@item.StockActual</td>
+                        <td>@item.StockMinimo</td>
+                        <td>@item.UsoMensualPromedio</td>
+                        <td>@item.MesesSobrantes</td>
+                        <td><strong>@item.Riesgo</strong></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <h4 class="mt-5">📊 Gráfico: Meses de cobertura por insumo</h4>
+
+    <ApexChart TItem="BarPoint" Title="Meses de cobertura por insumo" @ref="chart">
+        <ApexChartOptions XAxisOptions="new ApexXAxis { Categories = data.Select(d => d.InsumoNombre).ToList() }" />
+        <ApexBarSeries TItem="BarPoint"
+                       Name="Meses sobrantes"
+                       Items="BarData"
+                       YValue="point => point.Meses" />
+    </ApexChart>
+}
+
+@code {
+    private List<ForecastRiesgoDto> data = new();
+    private ApexChart<BarPoint>? chart;
+    private List<BarPoint> BarData = new();
+    private bool IsLoading = true;
+    private string? CurrentSort;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var raw = await ForecastService.GetForecastRiesgoAsync();
+        data = raw.ToList();
+
+        BarData = data.Select(d => new BarPoint
+        {
+            Insumo = d.InsumoNombre,
+            Meses = d.MesesSobrantes
+        }).ToList();
+
+        IsLoading = false;
+    }
+
+    private void SortBy(string property)
+    {
+        if (CurrentSort == property)
+        {
+            data.Reverse();
+            return;
+        }
+
+        CurrentSort = property;
+
+        data = property switch
+        {
+            nameof(ForecastRiesgoDto.InsumoNombre) => data.OrderBy(x => x.InsumoNombre).ToList(),
+            nameof(ForecastRiesgoDto.StockActual) => data.OrderBy(x => x.StockActual).ToList(),
+            nameof(ForecastRiesgoDto.StockMinimo) => data.OrderBy(x => x.StockMinimo).ToList(),
+            nameof(ForecastRiesgoDto.UsoMensualPromedio) => data.OrderBy(x => x.UsoMensualPromedio).ToList(),
+            nameof(ForecastRiesgoDto.MesesSobrantes) => data.OrderBy(x => x.MesesSobrantes).ToList(),
+            nameof(ForecastRiesgoDto.Riesgo) => data.OrderBy(x => x.Riesgo).ToList(),
+            _ => data
+        };
+    }
+
+    private string GetRiesgoClass(string riesgo) => riesgo switch
+    {
+        "Alerta crítica" => "table-danger",
+        "Riesgo moderado" => "table-warning",
+        "Debajo del stock mínimo" => "table-secondary",
+        "Sin uso" => "table-info",
+        _ => "table-success"
+    };
+
+    public class BarPoint
+    {
+        public string Insumo { get; set; } = "";
+        public double Meses { get; set; }
+    }
+}

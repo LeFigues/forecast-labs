@@ -1,0 +1,122 @@
+﻿@page "/insumos-riesgo-ai"
+@using System.Net.Http.Json
+@inject HttpClient Http
+
+<h3 class="mt-3">🤖 Análisis de Riesgo con IA</h3>
+
+<div class="mb-3">
+    <button class="btn btn-primary me-2" @onclick="CargarDatos" disabled="@loading">
+        <span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true" hidden="@(loading == false)"></span>
+        📊 Obtener forecast
+    </button>
+
+    <button class="btn btn-success" @onclick="EnviarAI" disabled="@(!datos.Any() || loading)">
+        <span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true" hidden="@(loading == false)"></span>
+        🧠 Enviar a IA
+    </button>
+</div>
+
+@if (loading)
+{
+    <div class="d-flex justify-content-center mt-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+}
+else if (datos.Any())
+{
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Insumo</th>
+                <th>Stock Actual</th>
+                <th>Stock Mínimo</th>
+                <th>Uso Promedio</th>
+                <th>Meses Restantes</th>
+                <th>Riesgo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in datos)
+            {
+                <tr>
+                    <td>@item.InsumoNombre</td>
+                    <td>@item.StockActual</td>
+                    <td>@item.StockMinimo</td>
+                    <td>@item.UsoMensualPromedio</td>
+                    <td>@item.MesesSobrantes</td>
+                    <td><strong>@item.Riesgo</strong></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (!string.IsNullOrWhiteSpace(respuestaIA))
+{
+    <div class="alert alert-info mt-4">
+        <h5>📄 Respuesta de IA:</h5>
+        <p>@respuestaIA</p>
+    </div>
+}
+
+@code {
+    private List<ForecastRiesgoDto> datos = new();
+    private string respuestaIA = string.Empty;
+    private bool loading = false;
+
+    private async Task CargarDatos()
+    {
+        loading = true;
+        respuestaIA = "";
+        try
+        {
+            datos = await Http.GetFromJsonAsync<List<ForecastRiesgoDto>>("https://forecast.labs.underflabs.com/api/forecast/insumos-riesgo") ?? new();
+        }
+        catch
+        {
+            respuestaIA = "⚠️ Error al obtener los datos.";
+        }
+        loading = false;
+    }
+
+    private async Task EnviarAI()
+    {
+        if (!datos.Any()) return;
+
+        loading = true;
+        respuestaIA = "";
+
+        var body = new { datos };
+
+        try
+        {
+            var response = await Http.PostAsJsonAsync("https://forecast.labs.underflabs.com/api/forecast/insumos-riesgo/ai", body);
+            if (response.IsSuccessStatusCode)
+            {
+                respuestaIA = await response.Content.ReadAsStringAsync();
+            }
+            else
+            {
+                respuestaIA = "⚠️ Error al comunicarse con OpenAI.";
+            }
+        }
+        catch
+        {
+            respuestaIA = "⚠️ Error de red al enviar a IA.";
+        }
+
+        loading = false;
+    }
+
+    private class ForecastRiesgoDto
+    {
+        public string InsumoNombre { get; set; } = "";
+        public int StockActual { get; set; }
+        public int StockMinimo { get; set; }
+        public double UsoMensualPromedio { get; set; }
+        public double MesesSobrantes { get; set; }
+        public string Riesgo { get; set; } = "";
+    }
+}

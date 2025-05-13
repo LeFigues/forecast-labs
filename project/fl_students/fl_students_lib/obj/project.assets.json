@@ -2161,11 +2161,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_lib\\fl_students_lib.csproj",
+      "projectUniqueName": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_students\\fl_students_lib\\fl_students_lib.csproj",
       "projectName": "fl_students_lib",
-      "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_lib\\fl_students_lib.csproj",
+      "projectPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_students\\fl_students_lib\\fl_students_lib.csproj",
       "packagesPath": "C:\\Users\\figue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\uflid\\forecast-labs\\project\\fl_students\\fl_students_lib\\obj\\",
+      "outputPath": "C:\\Users\\figue\\OneDrive\\Escritorio\\project2\\fl_students\\fl_students_lib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

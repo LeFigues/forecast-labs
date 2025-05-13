@@ -24,7 +24,6 @@ builder.Services.AddHttpClient<IDocumentService, DocumentService>(client =>
     client.BaseAddress = new Uri("https://forecast.labs.underflabs.com/");
 });
 
-// Servicio para Students API
 builder.Services.AddHttpClient<IStudentsService, StudentsService>(client =>
 {
     client.BaseAddress = new Uri("https://api.students.underflabs.com/");
@@ -39,6 +38,7 @@ builder.Services.AddHttpClient<IForecastService, ForecastService>(client =>
 {
     client.BaseAddress = new Uri("https://forecast.labs.underflabs.com/");
 });
+
 
 builder.Services.AddSingleton<AppState>();
 

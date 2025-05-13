@@ -1,7 +1,20 @@
 ﻿@page "/"
 
+@inject NavigationManager Navigation
+
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
 
-Welcome to your new app.
+<p>Welcome to your new app.</p>
+
+<div class="mt-4">
+    <img src="@QrUrl" alt="QR de esta página" />
+    <p class="mt-2">Escanea este código QR para abrir esta página:</p>
+    <code>@CurrentUrl</code>
+</div>
+
+@code {
+    private string CurrentUrl => Navigation.Uri;
+    private string QrUrl => $"https://api.qrserver.com/v1/create-qr-code/?data={Uri.EscapeDataString(CurrentUrl)}&size=200x200";
+}

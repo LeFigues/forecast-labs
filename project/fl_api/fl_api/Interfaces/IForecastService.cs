@@ -1,4 +1,5 @@
 ﻿using fl_api.Dtos;
+using fl_api.Dtos.Forecast;
 
 namespace fl_api.Interfaces
 {
@@ -9,5 +10,15 @@ namespace fl_api.Interfaces
         Task<List<ForecastPointDto>> ForecastAsync(
             IEnumerable<DailyDemandDto> history,
             string horizon);
+
+        Task<List<ForecastInsumoDto>> ForecastInsumosPorPracticaAsync();
+        Task<List<ForecastHistoricoDto>> ForecastInsumosHistoricoAsync();
+        Task<List<ForecastPracticaDto>> ForecastPracticasUsoAsync();
+        Task<List<ForecastRiesgoDto>> ForecastInsumosEnRiesgoAsync();
+
+
+
+
+
     }
 }

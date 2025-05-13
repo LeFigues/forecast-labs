@@ -16,6 +16,7 @@ namespace fl_api.Services
         {
             "correction" => _settings.Correction,
             "structuring" => _settings.Structuring,
+            "prediction" => _settings.Prediction,
             _ => throw new KeyNotFoundException($"Prompt '{key}' not found")
         };
     }
