@@ -112,3 +112,24 @@ code {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+.nav-link-dark {
+    display: block;
+    padding: 8px 12px;
+    margin: 2px 0;
+    color: #ccc;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+    .nav-link-dark:hover {
+        background-color: #2b2b2b;
+        color: white;
+    }
+
+    .nav-link-dark.active {
+        background-color: #444;
+        font-weight: bold;
+        color: white;
+    }
